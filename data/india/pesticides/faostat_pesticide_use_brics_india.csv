@@ -1,0 +1,51 @@
+country,pesticide_category,element,year,unit,value,flag,source,source_url
+India,Pesticides (total),Agricultural Use,2020,t,40094.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Agricultural Use,2021,t,40094.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Agricultural Use,2022,t,40094.0,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Agricultural Use,2023,t,40094.0,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Agricultural Use,2024,t,40094.0,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per area of cropland,2020,kg/ha,0.24,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per area of cropland,2021,kg/ha,0.24,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per area of cropland,2022,kg/ha,0.24,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per area of cropland,2023,kg/ha,0.24,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per area of cropland,2024,kg/ha,0.24,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per capita,2020,kg/cap,0.03,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per capita,2021,kg/cap,0.03,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per capita,2022,kg/cap,0.03,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per capita,2023,kg/cap,0.03,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per capita,2024,kg/cap,0.03,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per value of agricultural production,2020,g/Int$,0.09,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per value of agricultural production,2021,g/Int$,0.08,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per value of agricultural production,2022,g/Int$,0.08,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per value of agricultural production,2023,g/Int$,0.08,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Pesticides (total),Use per value of agricultural production,2024,g/Int$,0.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Insecticides,Agricultural Use,2020,t,20619.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Insecticides,Agricultural Use,2021,t,20619.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Insecticides,Agricultural Use,2022,t,20619.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Insecticides,Agricultural Use,2023,t,20619.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Insecticides,Agricultural Use,2024,t,20619.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Herbicides,Agricultural Use,2020,t,6335.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Herbicides,Agricultural Use,2021,t,6335.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Herbicides,Agricultural Use,2022,t,6335.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Herbicides,Agricultural Use,2023,t,6335.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Herbicides,Agricultural Use,2024,t,6335.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Fungicides and Bactericides,Agricultural Use,2020,t,13055.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Fungicides and Bactericides,Agricultural Use,2021,t,13055.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Fungicides and Bactericides,Agricultural Use,2022,t,13055.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Fungicides and Bactericides,Agricultural Use,2023,t,13055.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Fungicides and Bactericides,Agricultural Use,2024,t,13055.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Plant Growth Regulators,Agricultural Use,2020,t,84.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Plant Growth Regulators,Agricultural Use,2021,t,84.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Plant Growth Regulators,Agricultural Use,2022,t,84.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Plant Growth Regulators,Agricultural Use,2023,t,84.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Plant Growth Regulators,Agricultural Use,2024,t,84.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Rodenticides,Agricultural Use,2020,t,0.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Rodenticides,Agricultural Use,2021,t,0.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Rodenticides,Agricultural Use,2022,t,0.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Rodenticides,Agricultural Use,2023,t,0.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Rodenticides,Agricultural Use,2024,t,0.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Other Pesticides nes,Agricultural Use,2020,t,0.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Other Pesticides nes,Agricultural Use,2021,t,0.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Other Pesticides nes,Agricultural Use,2022,t,0.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Other Pesticides nes,Agricultural Use,2023,t,0.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
+India,Other Pesticides nes,Agricultural Use,2024,t,0.0,I,FAOSTAT,https://www.fao.org/faostat/en/#data/RP
