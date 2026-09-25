@@ -1,0 +1,733 @@
+country,crop,price_element,year,month,unit,price,flag,source,source_url
+India,Agriculture,,2020.0,Annual value,,113.36,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Agriculture,,2021.0,Annual value,,131.66,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Agriculture,,2022.0,Annual value,,139.83,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Agriculture,,2023.0,Annual value,,142.39,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Agriculture,,2024.0,Annual value,,150.97,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Agriculture,,2025.0,Annual value,,158.59,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Anise, badian, coriander, cumin, caraway, fennel and juniper berries, raw",,2020.0,Annual value,,105.78,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Anise, badian, coriander, cumin, caraway, fennel and juniper berries, raw",,2021.0,Annual value,,128.44,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Anise, badian, coriander, cumin, caraway, fennel and juniper berries, raw",,2022.0,Annual value,,138.17,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Anise, badian, coriander, cumin, caraway, fennel and juniper berries, raw",,2023.0,Annual value,,141.32,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Anise, badian, coriander, cumin, caraway, fennel and juniper berries, raw",,2024.0,Annual value,,147.18,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Anise, badian, coriander, cumin, caraway, fennel and juniper berries, raw",,2025.0,Annual value,,153.04,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Apples,,2020.0,Annual value,,109.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Apples,,2021.0,Annual value,,127.86,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Apples,,2022.0,Annual value,,137.09,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Apples,,2023.0,Annual value,,141.04,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Apples,,2024.0,Annual value,,149.59,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Apples,,2025.0,Annual value,,158.13,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Apricots,,2020.0,Annual value,,110.62,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Apricots,,2021.0,Annual value,,134.95,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Apricots,,2022.0,Annual value,,139.88,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Apricots,,2023.0,Annual value,,143.7,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Apricots,,2024.0,Annual value,,152.88,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Apricots,,2025.0,Annual value,,162.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Areca nuts,,2020.0,Annual value,,130.1,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Areca nuts,,2021.0,Annual value,,142.19,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Areca nuts,,2022.0,Annual value,,147.87,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Areca nuts,,2023.0,Annual value,,148.96,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Areca nuts,,2024.0,Annual value,,160.82,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Areca nuts,,2025.0,Annual value,,169.64,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Bananas,,2020.0,Annual value,,109.21,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Bananas,,2021.0,Annual value,,127.8,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Bananas,,2022.0,Annual value,,137.02,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Bananas,,2023.0,Annual value,,139.86,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Bananas,,2024.0,Annual value,,149.1,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Bananas,,2025.0,Annual value,,158.34,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Barley,,2020.0,Annual value,,120.23,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Barley,,2021.0,Annual value,,133.83,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Barley,,2022.0,Annual value,,140.45,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Barley,,2023.0,Annual value,,142.9,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Barley,,2024.0,Annual value,,154.8,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Barley,,2025.0,Annual value,,163.99,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Beans, dry",,2020.0,Annual value,,108.86,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Beans, dry",,2021.0,Annual value,,128.72,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Beans, dry",,2022.0,Annual value,,137.63,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Beans, dry",,2023.0,Annual value,,140.61,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Beans, dry",,2024.0,Annual value,,149.64,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Beans, dry",,2025.0,Annual value,,158.66,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cabbages,,2020.0,Annual value,,118.47,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cabbages,,2021.0,Annual value,,126.44,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cabbages,,2022.0,Annual value,,129.56,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cabbages,,2023.0,Annual value,,128.22,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cabbages,,2024.0,Annual value,,140.47,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cabbages,,2025.0,Annual value,,148.44,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cantaloupes and other melons,,2020.0,Annual value,,110.12,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cantaloupes and other melons,,2021.0,Annual value,,145.08,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cantaloupes and other melons,,2022.0,Annual value,,166.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cantaloupes and other melons,,2023.0,Annual value,,177.09,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cantaloupes and other melons,,2024.0,Annual value,,171.64,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cantaloupes and other melons,,2025.0,Annual value,,166.18,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Carrots and turnips,,2020.0,Annual value,,110.41,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Carrots and turnips,,2021.0,Annual value,,117.0,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Carrots and turnips,,2022.0,Annual value,,119.79,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Carrots and turnips,,2023.0,Annual value,,119.67,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Carrots and turnips,,2024.0,Annual value,,134.73,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Carrots and turnips,,2025.0,Annual value,,139.49,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cashew nuts, in shell",,2020.0,Annual value,,111.04,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cashew nuts, in shell",,2021.0,Annual value,,124.68,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cashew nuts, in shell",,2022.0,Annual value,,130.93,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cashew nuts, in shell",,2023.0,Annual value,,132.62,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cashew nuts, in shell",,2024.0,Annual value,,145.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cashew nuts, in shell",,2025.0,Annual value,,155.13,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cassava, fresh",,2020.0,Annual value,,115.78,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cassava, fresh",,2021.0,Annual value,,130.77,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cassava, fresh",,2022.0,Annual value,,132.13,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cassava, fresh",,2023.0,Annual value,,134.52,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cassava, fresh",,2024.0,Annual value,,146.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cassava, fresh",,2025.0,Annual value,,155.14,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Castor oil seeds,,2020.0,Annual value,,95.83,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Castor oil seeds,,2021.0,Annual value,,116.74,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Castor oil seeds,,2022.0,Annual value,,123.39,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Castor oil seeds,,2023.0,Annual value,,125.54,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Castor oil seeds,,2024.0,Annual value,,137.36,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Castor oil seeds,,2025.0,Annual value,,149.18,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cauliflowers and broccoli,,2020.0,Annual value,,117.56,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cauliflowers and broccoli,,2021.0,Annual value,,126.17,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cauliflowers and broccoli,,2022.0,Annual value,,129.61,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cauliflowers and broccoli,,2023.0,Annual value,,127.74,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cauliflowers and broccoli,,2024.0,Annual value,,139.94,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cauliflowers and broccoli,,2025.0,Annual value,,148.55,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cereals, primary",,2020.0,Annual value,,112.36,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cereals, primary",,2021.0,Annual value,,134.89,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cereals, primary",,2022.0,Annual value,,146.66,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cereals, primary",,2023.0,Annual value,,150.47,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cereals, primary",,2024.0,Annual value,,155.33,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cereals, primary",,2025.0,Annual value,,160.11,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cherries,,2020.0,Annual value,,110.62,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cherries,,2021.0,Annual value,,132.31,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cherries,,2022.0,Annual value,,139.12,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cherries,,2023.0,Annual value,,143.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cherries,,2024.0,Annual value,,152.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cherries,,2025.0,Annual value,,162.0,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chick peas, dry",,2020.0,Annual value,,124.4,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chick peas, dry",,2021.0,Annual value,,143.67,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chick peas, dry",,2022.0,Annual value,,145.23,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chick peas, dry",,2023.0,Annual value,,142.03,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chick peas, dry",,2024.0,Annual value,,155.39,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chick peas, dry",,2025.0,Annual value,,168.76,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chillies and peppers, dry (Capsicum spp., Pimenta spp.), raw",,2020.0,Annual value,,128.2,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chillies and peppers, dry (Capsicum spp., Pimenta spp.), raw",,2021.0,Annual value,,135.83,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chillies and peppers, dry (Capsicum spp., Pimenta spp.), raw",,2022.0,Annual value,,139.25,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chillies and peppers, dry (Capsicum spp., Pimenta spp.), raw",,2023.0,Annual value,,141.03,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chillies and peppers, dry (Capsicum spp., Pimenta spp.), raw",,2024.0,Annual value,,153.38,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chillies and peppers, dry (Capsicum spp., Pimenta spp.), raw",,2025.0,Annual value,,160.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",,2020.0,Annual value,,119.85,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",,2021.0,Annual value,,126.69,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",,2022.0,Annual value,,129.59,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",,2023.0,Annual value,,129.54,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",,2024.0,Annual value,,142.02,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",,2025.0,Annual value,,147.91,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Citrus Fruit, Total",,2020.0,Annual value,,106.37,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Citrus Fruit, Total",,2021.0,Annual value,,129.68,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Citrus Fruit, Total",,2022.0,Annual value,,136.78,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Citrus Fruit, Total",,2023.0,Annual value,,140.51,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Citrus Fruit, Total",,2024.0,Annual value,,149.48,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Citrus Fruit, Total",,2025.0,Annual value,,158.3,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coarse Grain, Total",,2020.0,Annual value,,110.77,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coarse Grain, Total",,2021.0,Annual value,,126.82,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coarse Grain, Total",,2022.0,Annual value,,134.27,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coarse Grain, Total",,2023.0,Annual value,,137.1,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coarse Grain, Total",,2024.0,Annual value,,146.38,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coarse Grain, Total",,2025.0,Annual value,,154.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cocoa beans,,2020.0,Annual value,,125.94,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cocoa beans,,2021.0,Annual value,,136.59,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cocoa beans,,2022.0,Annual value,,142.03,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cocoa beans,,2023.0,Annual value,,145.98,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cocoa beans,,2024.0,Annual value,,148.68,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cocoa beans,,2025.0,Annual value,,151.39,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coconuts, in shell",,2020.0,Annual value,,144.34,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coconuts, in shell",,2021.0,Annual value,,141.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coconuts, in shell",,2022.0,Annual value,,139.76,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coconuts, in shell",,2023.0,Annual value,,139.62,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coconuts, in shell",,2024.0,Annual value,,152.19,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coconuts, in shell",,2025.0,Annual value,,164.75,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coffee, green",,2020.0,Annual value,,122.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coffee, green",,2021.0,Annual value,,136.56,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coffee, green",,2022.0,Annual value,,144.13,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coffee, green",,2023.0,Annual value,,145.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coffee, green",,2024.0,Annual value,,157.16,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Coffee, green",,2025.0,Annual value,,166.16,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cotton lint, ginned",,2020.0,Annual value,,102.35,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cotton lint, ginned",,2021.0,Annual value,,111.26,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cotton lint, ginned",,2022.0,Annual value,,116.35,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cotton lint, ginned",,2023.0,Annual value,,118.01,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cotton lint, ginned",,2024.0,Annual value,,131.0,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Cotton lint, ginned",,2025.0,Annual value,,139.72,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cotton seed,,2020.0,Annual value,,115.05,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cotton seed,,2021.0,Annual value,,122.12,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cotton seed,,2022.0,Annual value,,124.85,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cotton seed,,2023.0,Annual value,,124.01,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cotton seed,,2024.0,Annual value,,136.14,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cotton seed,,2025.0,Annual value,,142.74,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cucumbers and gherkins,,2020.0,Annual value,,125.47,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cucumbers and gherkins,,2021.0,Annual value,,138.36,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cucumbers and gherkins,,2022.0,Annual value,,144.55,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cucumbers and gherkins,,2023.0,Annual value,,145.58,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cucumbers and gherkins,,2024.0,Annual value,,155.55,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Cucumbers and gherkins,,2025.0,Annual value,,163.16,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Eggplants (aubergines),,2020.0,Annual value,,123.35,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Eggplants (aubergines),,2021.0,Annual value,,136.69,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Eggplants (aubergines),,2022.0,Annual value,,143.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Eggplants (aubergines),,2023.0,Annual value,,144.34,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Eggplants (aubergines),,2024.0,Annual value,,153.35,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Eggplants (aubergines),,2025.0,Annual value,,160.59,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Eggs Primary,,2020.0,Annual value,,112.82,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Eggs Primary,,2021.0,Annual value,,130.38,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Eggs Primary,,2022.0,Annual value,,139.9,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Eggs Primary,,2023.0,Annual value,,142.9,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Eggs Primary,,2024.0,Annual value,,152.22,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Eggs Primary,,2025.0,Annual value,,161.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Fibre Crops Primary,,2020.0,Annual value,,112.82,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Fibre Crops Primary,,2021.0,Annual value,,122.4,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Fibre Crops Primary,,2022.0,Annual value,,127.44,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Fibre Crops Primary,,2023.0,Annual value,,129.38,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Fibre Crops Primary,,2024.0,Annual value,,142.02,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Fibre Crops Primary,,2025.0,Annual value,,150.88,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Figs,,2020.0,Annual value,,113.76,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Figs,,2021.0,Annual value,,135.78,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Figs,,2022.0,Annual value,,141.16,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Figs,,2023.0,Annual value,,144.97,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Figs,,2024.0,Annual value,,155.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Figs,,2025.0,Annual value,,166.02,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Fruit Primary,,2020.0,Annual value,,109.29,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Fruit Primary,,2021.0,Annual value,,129.89,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Fruit Primary,,2022.0,Annual value,,136.48,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Fruit Primary,,2023.0,Annual value,,139.61,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Fruit Primary,,2024.0,Annual value,,148.59,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Fruit Primary,,2025.0,Annual value,,157.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Fruit excl Melons, Total",,2020.0,Annual value,,109.28,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Fruit excl Melons, Total",,2021.0,Annual value,,129.73,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Fruit excl Melons, Total",,2022.0,Annual value,,136.13,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Fruit excl Melons, Total",,2023.0,Annual value,,139.17,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Fruit excl Melons, Total",,2024.0,Annual value,,148.31,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Fruit excl Melons, Total",,2025.0,Annual value,,157.04,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Ginger, raw",,2020.0,Annual value,,109.18,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Ginger, raw",,2021.0,Annual value,,127.13,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Ginger, raw",,2022.0,Annual value,,136.33,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Ginger, raw",,2023.0,Annual value,,141.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Ginger, raw",,2024.0,Annual value,,147.57,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Ginger, raw",,2025.0,Annual value,,153.62,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Grapes,,2020.0,Annual value,,108.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Grapes,,2021.0,Annual value,,131.89,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Grapes,,2022.0,Annual value,,138.4,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Grapes,,2023.0,Annual value,,142.33,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Grapes,,2024.0,Annual value,,150.99,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Grapes,,2025.0,Annual value,,159.66,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Green garlic,,2020.0,Annual value,,131.65,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Green garlic,,2021.0,Annual value,,186.1,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Green garlic,,2022.0,Annual value,,200.33,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Green garlic,,2023.0,Annual value,,191.12,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Green garlic,,2024.0,Annual value,,203.2,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Green garlic,,2025.0,Annual value,,215.29,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Groundnuts, excluding shelled",,2020.0,Annual value,,108.95,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Groundnuts, excluding shelled",,2021.0,Annual value,,123.16,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Groundnuts, excluding shelled",,2022.0,Annual value,,126.55,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Groundnuts, excluding shelled",,2023.0,Annual value,,122.27,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Groundnuts, excluding shelled",,2024.0,Annual value,,140.58,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Groundnuts, excluding shelled",,2025.0,Annual value,,152.65,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Hen eggs in shell, fresh",,2020.0,Annual value,,112.82,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Hen eggs in shell, fresh",,2021.0,Annual value,,130.38,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Hen eggs in shell, fresh",,2022.0,Annual value,,139.9,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Hen eggs in shell, fresh",,2023.0,Annual value,,142.9,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Hen eggs in shell, fresh",,2024.0,Annual value,,152.22,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Hen eggs in shell, fresh",,2025.0,Annual value,,161.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Jute & Jute-like Fibres,,2020.0,Annual value,,121.14,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Jute & Jute-like Fibres,,2021.0,Annual value,,131.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Jute & Jute-like Fibres,,2022.0,Annual value,,135.77,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Jute & Jute-like Fibres,,2023.0,Annual value,,137.97,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Jute & Jute-like Fibres,,2024.0,Annual value,,148.33,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Jute & Jute-like Fibres,,2025.0,Annual value,,156.21,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Jute, raw or retted",,2020.0,Annual value,,121.29,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Jute, raw or retted",,2021.0,Annual value,,131.08,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Jute, raw or retted",,2022.0,Annual value,,135.67,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Jute, raw or retted",,2023.0,Annual value,,138.02,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Jute, raw or retted",,2024.0,Annual value,,148.04,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Jute, raw or retted",,2025.0,Annual value,,155.7,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Kenaf, and other textile bast fibres, raw or retted",,2020.0,Annual value,,119.83,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Kenaf, and other textile bast fibres, raw or retted",,2021.0,Annual value,,131.82,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Kenaf, and other textile bast fibres, raw or retted",,2022.0,Annual value,,136.75,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Kenaf, and other textile bast fibres, raw or retted",,2023.0,Annual value,,137.49,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Kenaf, and other textile bast fibres, raw or retted",,2024.0,Annual value,,151.06,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Kenaf, and other textile bast fibres, raw or retted",,2025.0,Annual value,,160.91,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Lemons and limes,,2020.0,Annual value,,108.41,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Lemons and limes,,2021.0,Annual value,,131.93,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Lemons and limes,,2022.0,Annual value,,138.47,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Lemons and limes,,2023.0,Annual value,,142.41,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Lemons and limes,,2024.0,Annual value,,151.16,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Lemons and limes,,2025.0,Annual value,,159.91,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Lentils, dry",,2020.0,Annual value,,110.12,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Lentils, dry",,2021.0,Annual value,,125.12,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Lentils, dry",,2022.0,Annual value,,132.43,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Lentils, dry",,2023.0,Annual value,,134.49,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Lentils, dry",,2024.0,Annual value,,145.72,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Lentils, dry",,2025.0,Annual value,,154.59,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Lettuce and chicory,,2020.0,Annual value,,118.52,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Lettuce and chicory,,2021.0,Annual value,,127.25,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Lettuce and chicory,,2022.0,Annual value,,131.26,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Lettuce and chicory,,2023.0,Annual value,,131.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Lettuce and chicory,,2024.0,Annual value,,142.08,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Lettuce and chicory,,2025.0,Annual value,,149.66,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Linseed,,2020.0,Annual value,,110.16,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Linseed,,2021.0,Annual value,,127.51,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Linseed,,2022.0,Annual value,,132.39,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Linseed,,2023.0,Annual value,,135.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Linseed,,2024.0,Annual value,,146.65,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Linseed,,2025.0,Annual value,,158.14,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Livestock,,2020.0,Annual value,,110.55,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Livestock,,2021.0,Annual value,,127.65,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Livestock,,2022.0,Annual value,,136.19,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Livestock,,2023.0,Annual value,,139.16,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Livestock,,2024.0,Annual value,,148.92,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Livestock,,2025.0,Annual value,,158.57,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Maize (corn),,2020.0,Annual value,,106.85,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Maize (corn),,2021.0,Annual value,,123.33,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Maize (corn),,2022.0,Annual value,,131.72,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Maize (corn),,2023.0,Annual value,,134.32,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Maize (corn),,2024.0,Annual value,,142.43,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Maize (corn),,2025.0,Annual value,,150.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Mangoes, guavas and mangosteens",,2020.0,Annual value,,108.36,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Mangoes, guavas and mangosteens",,2021.0,Annual value,,131.92,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Mangoes, guavas and mangosteens",,2022.0,Annual value,,138.46,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Mangoes, guavas and mangosteens",,2023.0,Annual value,,142.39,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Mangoes, guavas and mangosteens",,2024.0,Annual value,,151.13,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Mangoes, guavas and mangosteens",,2025.0,Annual value,,159.86,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of buffalo, fresh or chilled",,2020.0,Annual value,,116.41,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of buffalo, fresh or chilled",,2021.0,Annual value,,122.08,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of buffalo, fresh or chilled",,2022.0,Annual value,,124.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of buffalo, fresh or chilled",,2023.0,Annual value,,123.06,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of buffalo, fresh or chilled",,2024.0,Annual value,,136.2,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of buffalo, fresh or chilled",,2025.0,Annual value,,140.33,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of buffalo, fresh or chilled (biological)",,2020.0,Annual value,,116.12,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of buffalo, fresh or chilled (biological)",,2021.0,Annual value,,122.48,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of buffalo, fresh or chilled (biological)",,2022.0,Annual value,,124.97,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of buffalo, fresh or chilled (biological)",,2023.0,Annual value,,124.05,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of buffalo, fresh or chilled (biological)",,2024.0,Annual value,,136.58,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of buffalo, fresh or chilled (biological)",,2025.0,Annual value,,141.83,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of cattle with the bone, fresh or chilled",,2020.0,Annual value,,117.7,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of cattle with the bone, fresh or chilled",,2021.0,Annual value,,124.05,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of cattle with the bone, fresh or chilled",,2022.0,Annual value,,126.47,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of cattle with the bone, fresh or chilled",,2023.0,Annual value,,125.45,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of cattle with the bone, fresh or chilled",,2024.0,Annual value,,138.3,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of cattle with the bone, fresh or chilled",,2025.0,Annual value,,143.45,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of cattle with the bone, fresh or chilled (biological)",,2020.0,Annual value,,116.88,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of cattle with the bone, fresh or chilled (biological)",,2021.0,Annual value,,123.24,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of cattle with the bone, fresh or chilled (biological)",,2022.0,Annual value,,125.69,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of cattle with the bone, fresh or chilled (biological)",,2023.0,Annual value,,124.72,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of cattle with the bone, fresh or chilled (biological)",,2024.0,Annual value,,137.41,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of cattle with the bone, fresh or chilled (biological)",,2025.0,Annual value,,142.61,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of chickens, fresh or chilled",,2020.0,Annual value,,123.75,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of chickens, fresh or chilled",,2021.0,Annual value,,135.16,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of chickens, fresh or chilled",,2022.0,Annual value,,139.27,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of chickens, fresh or chilled",,2023.0,Annual value,,138.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of chickens, fresh or chilled",,2024.0,Annual value,,150.61,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of chickens, fresh or chilled",,2025.0,Annual value,,159.05,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of chickens, fresh or chilled (biological)",,2020.0,Annual value,,123.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of chickens, fresh or chilled (biological)",,2021.0,Annual value,,135.02,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of chickens, fresh or chilled (biological)",,2022.0,Annual value,,139.26,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of chickens, fresh or chilled (biological)",,2023.0,Annual value,,138.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of chickens, fresh or chilled (biological)",,2024.0,Annual value,,150.49,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of chickens, fresh or chilled (biological)",,2025.0,Annual value,,158.83,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of ducks, fresh or chilled",,2020.0,Annual value,,112.9,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of ducks, fresh or chilled",,2021.0,Annual value,,127.19,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of ducks, fresh or chilled",,2022.0,Annual value,,134.43,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of ducks, fresh or chilled",,2023.0,Annual value,,136.49,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of ducks, fresh or chilled",,2024.0,Annual value,,148.09,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of ducks, fresh or chilled",,2025.0,Annual value,,157.11,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of goat, fresh or chilled",,2020.0,Annual value,,111.57,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of goat, fresh or chilled",,2021.0,Annual value,,127.43,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of goat, fresh or chilled",,2022.0,Annual value,,134.91,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of goat, fresh or chilled",,2023.0,Annual value,,137.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of goat, fresh or chilled",,2024.0,Annual value,,148.41,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of goat, fresh or chilled",,2025.0,Annual value,,157.51,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of goat, fresh or chilled (biological)",,2020.0,Annual value,,120.67,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of goat, fresh or chilled (biological)",,2021.0,Annual value,,131.48,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of goat, fresh or chilled (biological)",,2022.0,Annual value,,136.2,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of goat, fresh or chilled (biological)",,2023.0,Annual value,,135.12,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of goat, fresh or chilled (biological)",,2024.0,Annual value,,147.31,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of goat, fresh or chilled (biological)",,2025.0,Annual value,,156.03,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of pig with the bone, fresh or chilled",,2020.0,Annual value,,120.25,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of pig with the bone, fresh or chilled",,2021.0,Annual value,,134.32,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of pig with the bone, fresh or chilled",,2022.0,Annual value,,137.24,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of pig with the bone, fresh or chilled",,2023.0,Annual value,,138.68,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of pig with the bone, fresh or chilled",,2024.0,Annual value,,149.06,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of pig with the bone, fresh or chilled",,2025.0,Annual value,,159.44,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of pig with the bone, fresh or chilled (biological)",,2020.0,Annual value,,123.55,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of pig with the bone, fresh or chilled (biological)",,2021.0,Annual value,,134.08,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of pig with the bone, fresh or chilled (biological)",,2022.0,Annual value,,139.02,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of pig with the bone, fresh or chilled (biological)",,2023.0,Annual value,,141.57,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of pig with the bone, fresh or chilled (biological)",,2024.0,Annual value,,151.05,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of pig with the bone, fresh or chilled (biological)",,2025.0,Annual value,,158.43,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of sheep, fresh or chilled",,2020.0,Annual value,,111.37,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of sheep, fresh or chilled",,2021.0,Annual value,,128.45,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of sheep, fresh or chilled",,2022.0,Annual value,,136.77,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of sheep, fresh or chilled",,2023.0,Annual value,,139.49,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of sheep, fresh or chilled",,2024.0,Annual value,,149.83,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of sheep, fresh or chilled",,2025.0,Annual value,,160.17,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of sheep, fresh or chilled (biological)",,2020.0,Annual value,,121.55,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of sheep, fresh or chilled (biological)",,2021.0,Annual value,,133.44,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of sheep, fresh or chilled (biological)",,2022.0,Annual value,,139.08,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of sheep, fresh or chilled (biological)",,2023.0,Annual value,,138.7,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of sheep, fresh or chilled (biological)",,2024.0,Annual value,,149.82,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat of sheep, fresh or chilled (biological)",,2025.0,Annual value,,157.9,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat, Total",,2020.0,Annual value,,118.3,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat, Total",,2021.0,Annual value,,130.77,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat, Total",,2022.0,Annual value,,135.92,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat, Total",,2023.0,Annual value,,136.31,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat, Total",,2024.0,Annual value,,148.08,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Meat, Total",,2025.0,Annual value,,156.4,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Milk, Total",,2020.0,Annual value,,110.17,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Milk, Total",,2021.0,Annual value,,127.39,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Milk, Total",,2022.0,Annual value,,135.96,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Milk, Total",,2023.0,Annual value,,138.94,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Milk, Total",,2024.0,Annual value,,148.69,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Milk, Total",,2025.0,Annual value,,158.44,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Millet,,2020.0,Annual value,,114.42,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Millet,,2021.0,Annual value,,129.23,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Millet,,2022.0,Annual value,,137.73,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Millet,,2023.0,Annual value,,140.71,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Millet,,2024.0,Annual value,,151.29,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Millet,,2025.0,Annual value,,160.16,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Mushrooms and truffles,,2020.0,Annual value,,125.24,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Mushrooms and truffles,,2021.0,Annual value,,139.71,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Mushrooms and truffles,,2022.0,Annual value,,146.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Mushrooms and truffles,,2023.0,Annual value,,148.6,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Mushrooms and truffles,,2024.0,Annual value,,156.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Mushrooms and truffles,,2025.0,Annual value,,165.02,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Natural honey,,2020.0,Annual value,,130.7,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Natural honey,,2021.0,Annual value,,135.61,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Natural honey,,2022.0,Annual value,,137.65,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Natural honey,,2023.0,Annual value,,139.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Natural honey,,2024.0,Annual value,,152.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Natural honey,,2025.0,Annual value,,155.05,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Natural rubber in primary forms,,2020.0,Annual value,,127.84,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Natural rubber in primary forms,,2021.0,Annual value,,146.29,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Natural rubber in primary forms,,2022.0,Annual value,,153.57,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Natural rubber in primary forms,,2023.0,Annual value,,152.23,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Natural rubber in primary forms,,2024.0,Annual value,,161.66,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Natural rubber in primary forms,,2025.0,Annual value,,171.08,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Nutmeg, mace, cardamoms, raw",,2020.0,Annual value,,110.28,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Nutmeg, mace, cardamoms, raw",,2021.0,Annual value,,132.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Nutmeg, mace, cardamoms, raw",,2022.0,Annual value,,142.57,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Nutmeg, mace, cardamoms, raw",,2023.0,Annual value,,145.98,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Nutmeg, mace, cardamoms, raw",,2024.0,Annual value,,152.75,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Nutmeg, mace, cardamoms, raw",,2025.0,Annual value,,159.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Oilcrops, Oil Equivalent",,2020.0,Annual value,,124.39,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Oilcrops, Oil Equivalent",,2021.0,Annual value,,133.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Oilcrops, Oil Equivalent",,2022.0,Annual value,,136.95,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Oilcrops, Oil Equivalent",,2023.0,Annual value,,137.25,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Oilcrops, Oil Equivalent",,2024.0,Annual value,,150.71,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Oilcrops, Oil Equivalent",,2025.0,Annual value,,158.57,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Okra,,2020.0,Annual value,,124.43,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Okra,,2021.0,Annual value,,135.6,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Okra,,2022.0,Annual value,,140.87,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Okra,,2023.0,Annual value,,143.58,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Okra,,2024.0,Annual value,,151.03,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Okra,,2025.0,Annual value,,158.48,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Onions and shallots, dry (excluding dehydrated)",,2020.0,Annual value,,125.51,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Onions and shallots, dry (excluding dehydrated)",,2021.0,Annual value,,140.72,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Onions and shallots, dry (excluding dehydrated)",,2022.0,Annual value,,148.24,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Onions and shallots, dry (excluding dehydrated)",,2023.0,Annual value,,149.69,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Onions and shallots, dry (excluding dehydrated)",,2024.0,Annual value,,157.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Onions and shallots, dry (excluding dehydrated)",,2025.0,Annual value,,165.94,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Oranges,,2020.0,Annual value,,107.67,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Oranges,,2021.0,Annual value,,131.8,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Oranges,,2022.0,Annual value,,138.25,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Oranges,,2023.0,Annual value,,142.18,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Oranges,,2024.0,Annual value,,150.69,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Oranges,,2025.0,Annual value,,159.2,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other beans, green",,2020.0,Annual value,,111.42,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other beans, green",,2021.0,Annual value,,129.17,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other beans, green",,2022.0,Annual value,,137.66,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other beans, green",,2023.0,Annual value,,140.23,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other beans, green",,2024.0,Annual value,,150.6,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other beans, green",,2025.0,Annual value,,160.97,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other citrus fruit, n.e.c.",,2020.0,Annual value,,89.65,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other citrus fruit, n.e.c.",,2021.0,Annual value,,106.36,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other citrus fruit, n.e.c.",,2022.0,Annual value,,120.1,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other citrus fruit, n.e.c.",,2023.0,Annual value,,121.86,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other citrus fruit, n.e.c.",,2024.0,Annual value,,134.62,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other citrus fruit, n.e.c.",,2025.0,Annual value,,145.78,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other fruits, n.e.c.",,2020.0,Annual value,,110.45,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other fruits, n.e.c.",,2021.0,Annual value,,135.51,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other fruits, n.e.c.",,2022.0,Annual value,,140.52,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other fruits, n.e.c.",,2023.0,Annual value,,144.09,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other fruits, n.e.c.",,2024.0,Annual value,,152.93,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other fruits, n.e.c.",,2025.0,Annual value,,161.76,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other meat of mammals, fresh or chilled",,2020.0,Annual value,,109.46,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other meat of mammals, fresh or chilled",,2021.0,Annual value,,124.98,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other meat of mammals, fresh or chilled",,2022.0,Annual value,,132.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other meat of mammals, fresh or chilled",,2023.0,Annual value,,135.03,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other meat of mammals, fresh or chilled",,2024.0,Annual value,,145.72,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other meat of mammals, fresh or chilled",,2025.0,Annual value,,154.66,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other oil seeds, n.e.c.",,2020.0,Annual value,,116.89,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other oil seeds, n.e.c.",,2021.0,Annual value,,123.9,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other oil seeds, n.e.c.",,2022.0,Annual value,,127.06,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other oil seeds, n.e.c.",,2023.0,Annual value,,127.18,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other oil seeds, n.e.c.",,2024.0,Annual value,,138.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other oil seeds, n.e.c.",,2025.0,Annual value,,145.21,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Other pulses n.e.c.,,2020.0,Annual value,,109.24,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Other pulses n.e.c.,,2021.0,Annual value,,131.98,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Other pulses n.e.c.,,2022.0,Annual value,,144.0,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Other pulses n.e.c.,,2023.0,Annual value,,148.58,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Other pulses n.e.c.,,2024.0,Annual value,,154.55,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Other pulses n.e.c.,,2025.0,Annual value,,160.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other stimulant, spice and aromatic crops, n.e.c.",,2020.0,Annual value,,105.85,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other stimulant, spice and aromatic crops, n.e.c.",,2021.0,Annual value,,113.83,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other stimulant, spice and aromatic crops, n.e.c.",,2022.0,Annual value,,119.61,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other stimulant, spice and aromatic crops, n.e.c.",,2023.0,Annual value,,121.96,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other stimulant, spice and aromatic crops, n.e.c.",,2024.0,Annual value,,134.64,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other stimulant, spice and aromatic crops, n.e.c.",,2025.0,Annual value,,141.8,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Other stone fruits,,2020.0,Annual value,,113.48,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Other stone fruits,,2021.0,Annual value,,133.26,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Other stone fruits,,2022.0,Annual value,,137.63,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Other stone fruits,,2023.0,Annual value,,139.6,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Other stone fruits,,2024.0,Annual value,,152.63,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Other stone fruits,,2025.0,Annual value,,165.66,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other tropical fruits, n.e.c.",,2020.0,Annual value,,119.22,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other tropical fruits, n.e.c.",,2021.0,Annual value,,128.61,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other tropical fruits, n.e.c.",,2022.0,Annual value,,132.64,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other tropical fruits, n.e.c.",,2023.0,Annual value,,131.86,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other tropical fruits, n.e.c.",,2024.0,Annual value,,142.87,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other tropical fruits, n.e.c.",,2025.0,Annual value,,150.77,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other vegetables, fresh n.e.c.",,2020.0,Annual value,,108.77,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other vegetables, fresh n.e.c.",,2021.0,Annual value,,125.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other vegetables, fresh n.e.c.",,2022.0,Annual value,,133.98,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other vegetables, fresh n.e.c.",,2023.0,Annual value,,136.49,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other vegetables, fresh n.e.c.",,2024.0,Annual value,,146.66,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Other vegetables, fresh n.e.c.",,2025.0,Annual value,,156.82,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Papayas,,2020.0,Annual value,,98.05,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Papayas,,2021.0,Annual value,,111.34,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Papayas,,2022.0,Annual value,,108.83,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Papayas,,2023.0,Annual value,,110.58,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Papayas,,2024.0,Annual value,,119.77,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Papayas,,2025.0,Annual value,,126.17,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Peaches and nectarines,,2020.0,Annual value,,111.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Peaches and nectarines,,2021.0,Annual value,,136.3,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Peaches and nectarines,,2022.0,Annual value,,141.37,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Peaches and nectarines,,2023.0,Annual value,,144.94,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Peaches and nectarines,,2024.0,Annual value,,153.87,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Peaches and nectarines,,2025.0,Annual value,,162.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pears,,2020.0,Annual value,,104.13,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pears,,2021.0,Annual value,,113.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pears,,2022.0,Annual value,,128.13,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pears,,2023.0,Annual value,,146.74,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pears,,2024.0,Annual value,,148.94,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pears,,2025.0,Annual value,,158.63,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Peas, dry",,2020.0,Annual value,,111.25,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Peas, dry",,2021.0,Annual value,,133.09,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Peas, dry",,2022.0,Annual value,,137.86,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Peas, dry",,2023.0,Annual value,,140.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Peas, dry",,2024.0,Annual value,,151.06,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Peas, dry",,2025.0,Annual value,,161.61,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Peas, green",,2020.0,Annual value,,116.62,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Peas, green",,2021.0,Annual value,,125.54,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Peas, green",,2022.0,Annual value,,128.14,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Peas, green",,2023.0,Annual value,,125.17,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Peas, green",,2024.0,Annual value,,138.78,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Peas, green",,2025.0,Annual value,,147.7,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pepper (Piper spp.), raw",,2020.0,Annual value,,98.37,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pepper (Piper spp.), raw",,2021.0,Annual value,,104.56,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pepper (Piper spp.), raw",,2022.0,Annual value,,106.85,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pepper (Piper spp.), raw",,2023.0,Annual value,,107.52,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pepper (Piper spp.), raw",,2024.0,Annual value,,121.89,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pepper (Piper spp.), raw",,2025.0,Annual value,,126.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pigeon peas, dry",,2020.0,Annual value,,105.7,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pigeon peas, dry",,2021.0,Annual value,,125.29,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pigeon peas, dry",,2022.0,Annual value,,130.33,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pigeon peas, dry",,2023.0,Annual value,,130.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pigeon peas, dry",,2024.0,Annual value,,143.23,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pigeon peas, dry",,2025.0,Annual value,,155.96,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pineapples,,2020.0,Annual value,,121.38,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pineapples,,2021.0,Annual value,,141.14,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pineapples,,2022.0,Annual value,,142.18,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pineapples,,2023.0,Annual value,,139.57,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pineapples,,2024.0,Annual value,,152.33,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pineapples,,2025.0,Annual value,,165.1,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Plums and sloes,,2020.0,Annual value,,111.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Plums and sloes,,2021.0,Annual value,,136.3,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Plums and sloes,,2022.0,Annual value,,141.37,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Plums and sloes,,2023.0,Annual value,,144.94,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Plums and sloes,,2024.0,Annual value,,153.87,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Plums and sloes,,2025.0,Annual value,,162.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pomelos and grapefruits,,2020.0,Annual value,,111.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pomelos and grapefruits,,2021.0,Annual value,,136.3,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pomelos and grapefruits,,2022.0,Annual value,,141.37,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pomelos and grapefruits,,2023.0,Annual value,,144.94,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pomelos and grapefruits,,2024.0,Annual value,,153.87,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Pomelos and grapefruits,,2025.0,Annual value,,162.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Potatoes,,2020.0,Annual value,,118.74,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Potatoes,,2021.0,Annual value,,137.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Potatoes,,2022.0,Annual value,,138.43,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Potatoes,,2023.0,Annual value,,142.22,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Potatoes,,2024.0,Annual value,,154.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Potatoes,,2025.0,Annual value,,163.52,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pulses, Total",,2020.0,Annual value,,115.3,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pulses, Total",,2021.0,Annual value,,135.05,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pulses, Total",,2022.0,Annual value,,140.3,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pulses, Total",,2023.0,Annual value,,140.28,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pulses, Total",,2024.0,Annual value,,151.57,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pulses, Total",,2025.0,Annual value,,162.78,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pumpkins, squash and gourds",,2020.0,Annual value,,110.55,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pumpkins, squash and gourds",,2021.0,Annual value,,117.17,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pumpkins, squash and gourds",,2022.0,Annual value,,119.98,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pumpkins, squash and gourds",,2023.0,Annual value,,119.88,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pumpkins, squash and gourds",,2024.0,Annual value,,134.94,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Pumpkins, squash and gourds",,2025.0,Annual value,,139.74,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Rape or colza seed,,2020.0,Annual value,,107.31,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Rape or colza seed,,2021.0,Annual value,,115.62,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Rape or colza seed,,2022.0,Annual value,,121.44,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Rape or colza seed,,2023.0,Annual value,,123.27,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Rape or colza seed,,2024.0,Annual value,,136.39,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Rape or colza seed,,2025.0,Annual value,,143.92,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raspberries,,2020.0,Annual value,,109.58,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raspberries,,2021.0,Annual value,,127.89,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raspberries,,2022.0,Annual value,,137.12,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raspberries,,2023.0,Annual value,,140.62,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raspberries,,2024.0,Annual value,,149.51,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raspberries,,2025.0,Annual value,,158.4,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of buffalo,,2020.0,Annual value,,110.06,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of buffalo,,2021.0,Annual value,,127.37,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of buffalo,,2022.0,Annual value,,136.03,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of buffalo,,2023.0,Annual value,,139.09,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of buffalo,,2024.0,Annual value,,148.68,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of buffalo,,2025.0,Annual value,,158.28,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of cattle,,2020.0,Annual value,,110.35,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of cattle,,2021.0,Annual value,,127.46,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of cattle,,2022.0,Annual value,,135.91,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of cattle,,2023.0,Annual value,,138.8,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of cattle,,2024.0,Annual value,,148.75,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of cattle,,2025.0,Annual value,,158.71,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of goats,,2020.0,Annual value,,109.79,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of goats,,2021.0,Annual value,,126.77,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of goats,,2022.0,Annual value,,135.18,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of goats,,2023.0,Annual value,,138.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of goats,,2024.0,Annual value,,147.94,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Raw milk of goats,,2025.0,Annual value,,157.82,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Rice,,2020.0,Annual value,,113.94,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Rice,,2021.0,Annual value,,139.65,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Rice,,2022.0,Annual value,,153.33,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Rice,,2023.0,Annual value,,157.63,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Rice,,2024.0,Annual value,,160.01,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Rice,,2025.0,Annual value,,162.39,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Roots and Tubers, Total",,2020.0,Annual value,,118.53,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Roots and Tubers, Total",,2021.0,Annual value,,137.44,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Roots and Tubers, Total",,2022.0,Annual value,,138.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Roots and Tubers, Total",,2023.0,Annual value,,141.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Roots and Tubers, Total",,2024.0,Annual value,,153.74,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Roots and Tubers, Total",,2025.0,Annual value,,163.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Safflower seed,,2020.0,Annual value,,99.93,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Safflower seed,,2021.0,Annual value,,113.71,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Safflower seed,,2022.0,Annual value,,119.29,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Safflower seed,,2023.0,Annual value,,121.0,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Safflower seed,,2024.0,Annual value,,132.06,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Safflower seed,,2025.0,Annual value,,140.43,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Seed cotton, unginned",,2020.0,Annual value,,133.95,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Seed cotton, unginned",,2021.0,Annual value,,144.9,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Seed cotton, unginned",,2022.0,Annual value,,149.85,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Seed cotton, unginned",,2023.0,Annual value,,152.37,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Seed cotton, unginned",,2024.0,Annual value,,164.59,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Seed cotton, unginned",,2025.0,Annual value,,173.85,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sesame seed,,2020.0,Annual value,,108.4,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sesame seed,,2021.0,Annual value,,118.31,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sesame seed,,2022.0,Annual value,,124.89,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sesame seed,,2023.0,Annual value,,126.93,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sesame seed,,2024.0,Annual value,,139.35,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sesame seed,,2025.0,Annual value,,149.26,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Shorn wool, greasy, including fleece-washed shorn wool",,2020.0,Annual value,,120.2,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Shorn wool, greasy, including fleece-washed shorn wool",,2021.0,Annual value,,135.54,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Shorn wool, greasy, including fleece-washed shorn wool",,2022.0,Annual value,,137.92,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Shorn wool, greasy, including fleece-washed shorn wool",,2023.0,Annual value,,139.57,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Shorn wool, greasy, including fleece-washed shorn wool",,2024.0,Annual value,,149.65,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Shorn wool, greasy, including fleece-washed shorn wool",,2025.0,Annual value,,159.74,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Silk-worm cocoons suitable for reeling,,2020.0,Annual value,,130.7,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Silk-worm cocoons suitable for reeling,,2021.0,Annual value,,135.61,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Silk-worm cocoons suitable for reeling,,2022.0,Annual value,,137.65,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Silk-worm cocoons suitable for reeling,,2023.0,Annual value,,139.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Silk-worm cocoons suitable for reeling,,2024.0,Annual value,,152.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Silk-worm cocoons suitable for reeling,,2025.0,Annual value,,155.05,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sorghum,,2020.0,Annual value,,117.36,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sorghum,,2021.0,Annual value,,135.0,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sorghum,,2022.0,Annual value,,136.21,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sorghum,,2023.0,Annual value,,139.95,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sorghum,,2024.0,Annual value,,150.78,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sorghum,,2025.0,Annual value,,159.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Soya beans,,2020.0,Annual value,,141.77,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Soya beans,,2021.0,Annual value,,143.23,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Soya beans,,2022.0,Annual value,,141.3,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Soya beans,,2023.0,Annual value,,139.55,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Soya beans,,2024.0,Annual value,,151.78,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Soya beans,,2025.0,Annual value,,149.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sugar cane,,2020.0,Annual value,,114.82,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sugar cane,,2021.0,Annual value,,120.3,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sugar cane,,2022.0,Annual value,,122.69,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sugar cane,,2023.0,Annual value,,122.85,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sugar cane,,2024.0,Annual value,,134.86,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sugar cane,,2025.0,Annual value,,138.92,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sunflower seed,,2020.0,Annual value,,119.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sunflower seed,,2021.0,Annual value,,129.23,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sunflower seed,,2022.0,Annual value,,134.01,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sunflower seed,,2023.0,Annual value,,136.46,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sunflower seed,,2024.0,Annual value,,147.47,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sunflower seed,,2025.0,Annual value,,155.88,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sweet potatoes,,2020.0,Annual value,,117.35,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sweet potatoes,,2021.0,Annual value,,139.49,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sweet potatoes,,2022.0,Annual value,,138.95,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sweet potatoes,,2023.0,Annual value,,143.77,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sweet potatoes,,2024.0,Annual value,,155.48,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Sweet potatoes,,2025.0,Annual value,,165.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Tea leaves,,2020.0,Annual value,,119.39,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Tea leaves,,2021.0,Annual value,,127.35,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Tea leaves,,2022.0,Annual value,,130.13,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Tea leaves,,2023.0,Annual value,,128.23,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Tea leaves,,2024.0,Annual value,,141.3,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Tea leaves,,2025.0,Annual value,,149.25,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Tomatoes,,2020.0,Annual value,,119.73,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Tomatoes,,2021.0,Annual value,,127.96,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Tomatoes,,2022.0,Annual value,,131.2,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Tomatoes,,2023.0,Annual value,,129.83,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Tomatoes,,2024.0,Annual value,,142.12,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Tomatoes,,2025.0,Annual value,,150.35,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Treenuts, Total",,2020.0,Annual value,,111.04,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Treenuts, Total",,2021.0,Annual value,,124.68,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Treenuts, Total",,2022.0,Annual value,,130.93,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Treenuts, Total",,2023.0,Annual value,,132.62,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Treenuts, Total",,2024.0,Annual value,,145.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Treenuts, Total",,2025.0,Annual value,,155.13,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Unmanufactured tobacco,,2020.0,Annual value,,111.35,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Unmanufactured tobacco,,2021.0,Annual value,,130.85,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Unmanufactured tobacco,,2022.0,Annual value,,140.91,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Unmanufactured tobacco,,2023.0,Annual value,,144.04,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Unmanufactured tobacco,,2024.0,Annual value,,152.97,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Unmanufactured tobacco,,2025.0,Annual value,,161.91,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Vegetables Primary,,2020.0,Annual value,,117.58,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Vegetables Primary,,2021.0,Annual value,,132.07,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Vegetables Primary,,2022.0,Annual value,,138.15,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Vegetables Primary,,2023.0,Annual value,,138.44,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Vegetables Primary,,2024.0,Annual value,,148.98,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Vegetables Primary,,2025.0,Annual value,,157.83,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Vegetables and Melons, Total",,2020.0,Annual value,,117.43,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Vegetables and Melons, Total",,2021.0,Annual value,,132.17,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Vegetables and Melons, Total",,2022.0,Annual value,,138.46,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Vegetables and Melons, Total",,2023.0,Annual value,,138.89,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Vegetables and Melons, Total",,2024.0,Annual value,,149.24,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Vegetables and Melons, Total",,2025.0,Annual value,,157.92,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Walnuts, in shell",,2020.0,Annual value,,111.04,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Walnuts, in shell",,2021.0,Annual value,,124.68,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Walnuts, in shell",,2022.0,Annual value,,130.93,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Walnuts, in shell",,2023.0,Annual value,,132.62,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Walnuts, in shell",,2024.0,Annual value,,145.5,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,"Walnuts, in shell",,2025.0,Annual value,,155.13,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Watermelons,,2020.0,Annual value,,109.26,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Watermelons,,2021.0,Annual value,,125.14,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Watermelons,,2022.0,Annual value,,133.22,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Watermelons,,2023.0,Annual value,,135.96,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Watermelons,,2024.0,Annual value,,146.37,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Watermelons,,2025.0,Annual value,,156.77,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Wheat,,2020.0,Annual value,,108.64,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Wheat,,2021.0,Annual value,,124.87,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Wheat,,2022.0,Annual value,,133.0,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Wheat,,2023.0,Annual value,,135.8,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Wheat,,2024.0,Annual value,,145.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
+India,Wheat,,2025.0,Annual value,,155.81,E,FAOSTAT,https://www.fao.org/faostat/en/#data/PP
