@@ -35,7 +35,7 @@ import {
 //   }
 // ----------------------------------------------------------------------------
 
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "https://promotion-modified-exhaust-advise.trycloudflare.com";
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "https://freeware-dana-switching-contamination.trycloudflare.com";
 
 export class ApiError extends Error {
   status?: number;
