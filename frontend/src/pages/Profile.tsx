@@ -15,6 +15,8 @@ import { useAuth } from "../auth/useAuth";
 import { Pencil, Check, LogOut } from "lucide-react";
 import type { FarmerProfile } from "../types";
 
+import LocationPicker from "../components/common/LocationPicker";
+
 export default function Profile() {
   const { profile, loading, error, reloadProfile, saveProfile, saving: profileSaving, saveError } =
     useFarmer();
@@ -63,6 +65,7 @@ export default function Profile() {
       <Header title="Farm profile" subtitle="Your details, used to personalize every screen" />
 
       <div className="max-w-xl space-y-6">
+        <LocationPicker />
         <Card>
           <CardHeader
             title="Farmer details"

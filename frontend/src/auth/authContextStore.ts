@@ -6,6 +6,16 @@ export interface AuthContextValue {
   session: MockAuthSession | null;
   login: (identifier: string, password: string) => Promise<void>;
   demoLogin: (farmerId?: string) => Promise<void>;
+  guestLogin: () => Promise<void>;
+  registerFarmer: (params: {
+    name: string;
+    email: string;
+    village: string;
+    district: string;
+    state: string;
+    sizeAcres?: number;
+    currentCrop?: string;
+  }) => Promise<void>;
   logout: () => void;
   updateSessionProfile: (profile: FarmerProfile) => void;
 }

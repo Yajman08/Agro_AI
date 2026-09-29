@@ -17,16 +17,9 @@ export default function Weather() {
   const { profile } = useFarmer();
 
   const weather = useApi(() => {
-    if (!profile) {
-      return Promise.reject(
-        new Error("Farmer profile is not available")
-      );
-    }
-
-    return getWeather(
-      profile.location.latitude,
-      profile.location.longitude
-    );
+    const lat = profile?.location.latitude ?? 12.5218;
+    const lon = profile?.location.longitude ?? 76.8951;
+    return getWeather(lat, lon);
   });
 
   const { state, data, reload } = weather;
