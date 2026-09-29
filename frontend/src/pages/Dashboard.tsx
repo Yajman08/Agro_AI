@@ -23,9 +23,13 @@ import { useTranslation } from "../i18n/useTranslation";
 export default function Dashboard() {
   const { t } = useTranslation();
   const { profile, error: profileError, reloadProfile } = useFarmer();
-  const weather = useApi(() => getWeather());
-  const soil = useApi(() => getSoilData());
-  const crop = useApi(() => getCropRecommendation());
+  const weather = useApi(() => getWeather(profile?.location.latitude ?? 12.5218, profile?.location.longitude ?? 76.8951));
+  const soil = useApi(() => getSoilData(profile?.location.latitude ?? 12.5218, profile?.location.longitude ?? 76.8951));
+  const crop = useApi(() => getCropRecommendation({
+    latitude: profile?.location.latitude ?? 12.5218,
+    longitude: profile?.location.longitude ?? 76.8951,
+    month: new Date().getMonth() + 1,
+  }));
   const advisory = useApi(() => getAdvisory());
 
   const firstName = profile?.name?.split(" ")[0] ?? "there";

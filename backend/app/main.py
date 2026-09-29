@@ -6,6 +6,9 @@ from app.routes.weather import router as weather_router
 from app.routes.soil import router as soil_router
 from app.routes.crops import router as crops_router
 from app.routes.disease import router as disease_router
+from app.routes.advisory import router as advisory_router
+from app.routes.regenerative import router as regenerative_router
+
 # --------------------------------------------------
 # FastAPI Application
 # --------------------------------------------------
@@ -24,7 +27,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",
+        "*",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -41,6 +44,8 @@ app.include_router(weather_router)
 app.include_router(soil_router)
 app.include_router(crops_router)
 app.include_router(disease_router)
+app.include_router(advisory_router)
+app.include_router(regenerative_router)
 # --------------------------------------------------
 # Health Check
 # --------------------------------------------------

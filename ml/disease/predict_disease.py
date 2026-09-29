@@ -3,7 +3,6 @@ from pathlib import Path
 
 import numpy as np
 import tensorflow as tf
-from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from tensorflow.keras.utils import load_img, img_to_array
 
 
@@ -41,10 +40,6 @@ def predict_disease(image_path: str) -> dict:
     image_array = np.expand_dims(
         image_array,
         axis=0
-    )
-
-    image_array = preprocess_input(
-        image_array
     )
 
     predictions = model.predict(
