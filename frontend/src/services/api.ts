@@ -106,35 +106,92 @@ export async function updateFarmerProfile(
 }
 
 export async function getWeather(
-  _latitude?: number,
-  _longitude?: number
+  latitude?: number,
+  longitude?: number
 ): Promise<WeatherData> {
-  // Real endpoint: GET /api/weather
-  return delay(mockWeather);
+  if (latitude === undefined || longitude === undefined) {
+    throw new ApiError(
+      "Latitude and longitude are required for weather data."
+    );
+  }
+
+  const params = new URLSearchParams({
+    lat: String(latitude),
+    lon: String(longitude),
+  });
+
+  const res = await fetch(
+    `${API_BASE_URL}/api/weather?${params.toString()}`
+  );
+
+  if (!res.ok) {
+    const message = await res.text();
+
+    throw new ApiError(
+      message || "Failed to load weather data",
+      res.status
+    );
+  }
+
+  return (await res.json()) as WeatherData;
 }
 
 export async function getSoilData(
-  _latitude?: number,
-  _longitude?: number
+  latitude?: number,
+  longitude?: number
 ): Promise<SoilData> {
-  // Real endpoint: GET /api/soil
-  return delay(mockSoil);
+  const params = new URLSearchParams();
+
+  if (latitude !== undefined) {
+    params.set("lat", String(latitude));
+  }
+
+  if (longitude !== undefined) {
+    params.set("lon", String(longitude));
+  }
+
+  const res = await fetch(
+    `${API_BASE_URL}/api/soil?${params.toString()}`
+  );
+
+  if (!res.ok) {
+    const message = await res.text();
+
+    throw new ApiError(
+      message || "Failed to load soil data",
+      res.status
+    );
+  }
+
+  return (await res.json()) as SoilData;
 }
 
 export interface CropRecommendationRequest {
   latitude: number;
   longitude: number;
-  crop: string | null;
-  soilPh: number;
-  nitrogen: number;
-  organicCarbon: number;
+  month: number;
 }
 
 export async function getCropRecommendation(
-  _request?: Partial<CropRecommendationRequest>
+  request: CropRecommendationRequest
 ): Promise<CropRecommendation> {
-  // Real endpoint: POST /api/crop-recommendation
-  return delay(mockCropRecommendation, 900);
+  const res = await fetch(`${API_BASE_URL}/api/crop-recommendation`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(request),
+  });
+
+  if (!res.ok) {
+    const message = await res.text();
+    throw new ApiError(
+      message || "Failed to get crop recommendation",
+      res.status
+    );
+  }
+
+  return (await res.json()) as CropRecommendation;
 }
 
 export async function detectDisease(_imageFile: File): Promise<DiseaseResult> {
