@@ -19,9 +19,13 @@ import { useTranslation } from "../i18n/useTranslation";
 
 export default function Soil() {
   const { profile, error: profileError, reloadProfile } = useFarmer();
-  const soil = useApi(() => getSoilData());
-  const crop = useApi(() => getCropRecommendation());
-  const weather = useApi(() => getWeather());
+  const soil = useApi(() => getSoilData(profile?.location.latitude ?? 12.5218, profile?.location.longitude ?? 76.8951));
+  const crop = useApi(() => getCropRecommendation({
+    latitude: profile?.location.latitude ?? 12.5218,
+    longitude: profile?.location.longitude ?? 76.8951,
+    month: new Date().getMonth() + 1,
+  }));
+  const weather = useApi(() => getWeather(profile?.location.latitude ?? 12.5218, profile?.location.longitude ?? 76.8951));
 
   const location = profile
     ? `${profile.location.village}, ${profile.location.district}, ${profile.location.state}`

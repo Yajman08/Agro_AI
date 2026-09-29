@@ -8,11 +8,6 @@ import type {
 } from "../types";
 import {
   mockFarmerProfile,
-  mockWeather,
-  mockSoil,
-  mockCropRecommendation,
-  mockDiseaseResultSick,
-  mockDiseaseResultHealthy,
   mockAdvisory,
 } from "../data/mockData";
 
@@ -84,8 +79,17 @@ export async function getFarmerProfile(
   farmerId = mockFarmerProfile.id,
   fallbackProfile: FarmerProfile = mockFarmerProfile
 ): Promise<FarmerProfile> {
-  // Real endpoint: GET /api/farmer/profile
-  return delay(readStoredFarmerProfile(farmerId) ?? fallbackProfile);
+  try {
+    const res = await fetch(`${API_BASE_URL}/api/farmer/profile`);
+    if (res.ok) {
+      const data = (await res.json()) as FarmerProfile;
+      storeFarmerProfile(data, farmerId);
+      return data;
+    }
+  } catch {
+    // Ignore network error and fall back to local storage
+  }
+  return delay(readStoredFarmerProfile(farmerId) ?? fallbackProfile, 300);
 }
 
 export async function updateFarmerProfile(
@@ -93,7 +97,6 @@ export async function updateFarmerProfile(
   farmerId = mockFarmerProfile.id,
   fallbackProfile: FarmerProfile = mockFarmerProfile
 ): Promise<FarmerProfile> {
-  // Real endpoint: PUT /api/farmer/profile
   const current = readStoredFarmerProfile(farmerId) ?? fallbackProfile;
   const updated: FarmerProfile = {
     ...current,
@@ -101,51 +104,149 @@ export async function updateFarmerProfile(
     location: { ...current.location, ...(profile.location ?? {}) },
     farm: { ...current.farm, ...(profile.farm ?? {}) },
   };
+
+  try {
+    const res = await fetch(`${API_BASE_URL}/api/farmer/profile`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updated),
+    });
+    if (res.ok) {
+      const data = (await res.json()) as FarmerProfile;
+      storeFarmerProfile(data, farmerId);
+      return data;
+    }
+  } catch {
+    // Ignore network error and save locally
+  }
+
   storeFarmerProfile(updated, farmerId);
   return delay(updated, 500);
 }
 
 export async function getWeather(
-  _latitude?: number,
-  _longitude?: number
+  latitude?: number,
+  longitude?: number
 ): Promise<WeatherData> {
-  // Real endpoint: GET /api/weather
-  return delay(mockWeather);
+  if (latitude === undefined || longitude === undefined) {
+    throw new ApiError(
+      "Latitude and longitude are required for weather data."
+    );
+  }
+
+  const params = new URLSearchParams({
+    lat: String(latitude),
+    lon: String(longitude),
+  });
+
+  const res = await fetch(
+    `${API_BASE_URL}/api/weather?${params.toString()}`
+  );
+
+  if (!res.ok) {
+    const message = await res.text();
+
+    throw new ApiError(
+      message || "Failed to load weather data",
+      res.status
+    );
+  }
+
+  return (await res.json()) as WeatherData;
 }
 
 export async function getSoilData(
-  _latitude?: number,
-  _longitude?: number
+  latitude?: number,
+  longitude?: number
 ): Promise<SoilData> {
-  // Real endpoint: GET /api/soil
-  return delay(mockSoil);
+  const params = new URLSearchParams();
+
+  if (latitude !== undefined) {
+    params.set("lat", String(latitude));
+  }
+
+  if (longitude !== undefined) {
+    params.set("lon", String(longitude));
+  }
+
+  const res = await fetch(
+    `${API_BASE_URL}/api/soil?${params.toString()}`
+  );
+
+  if (!res.ok) {
+    const message = await res.text();
+
+    throw new ApiError(
+      message || "Failed to load soil data",
+      res.status
+    );
+  }
+
+  return (await res.json()) as SoilData;
 }
 
 export interface CropRecommendationRequest {
   latitude: number;
   longitude: number;
-  crop: string | null;
-  soilPh: number;
-  nitrogen: number;
-  organicCarbon: number;
+  month: number;
 }
 
 export async function getCropRecommendation(
-  _request?: Partial<CropRecommendationRequest>
+  request: CropRecommendationRequest
 ): Promise<CropRecommendation> {
-  // Real endpoint: POST /api/crop-recommendation
-  return delay(mockCropRecommendation, 900);
+  const res = await fetch(`${API_BASE_URL}/api/crop-recommendation`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(request),
+  });
+
+  if (!res.ok) {
+    const message = await res.text();
+    throw new ApiError(
+      message || "Failed to get crop recommendation",
+      res.status
+    );
+  }
+
+  return (await res.json()) as CropRecommendation;
 }
 
-export async function detectDisease(_imageFile: File): Promise<DiseaseResult> {
-  // Real endpoint: POST /api/disease-detection (multipart/form-data)
-  // Mock: alternate between a detected issue and a healthy result so the
-  // UI's two result states are both easy to demo.
-  const isHealthySample = Math.random() > 0.5;
-  return delay(isHealthySample ? mockDiseaseResultHealthy : mockDiseaseResultSick, 1400);
+export async function detectDisease(imageFile: File): Promise<DiseaseResult> {
+  const formData = new FormData();
+  formData.append("image", imageFile);
+
+  const res = await fetch(`${API_BASE_URL}/api/disease-detection`, {
+    method: "POST",
+    body: formData,
+  });
+
+  if (!res.ok) {
+    const message = await res.text();
+    throw new ApiError(
+      message || "Failed to detect crop disease",
+      res.status
+    );
+  }
+
+  return (await res.json()) as DiseaseResult;
 }
 
-export async function getAdvisory(_question?: string): Promise<AdvisoryData> {
-  // Real endpoint: POST /api/advisory
-  return delay(mockAdvisory, 800);
+export async function getAdvisory(question?: string): Promise<AdvisoryData> {
+  try {
+    const res = await fetch(`${API_BASE_URL}/api/advisory`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question }),
+    });
+
+    if (res.ok) {
+      return (await res.json()) as AdvisoryData;
+    }
+  } catch {
+    // Ignore network error and fall back to local mock
+  }
+
+  return delay(mockAdvisory, 500);
 }

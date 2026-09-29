@@ -10,10 +10,26 @@ import { useApi } from "../hooks/useApi";
 import { getWeather } from "../services/api";
 import { CloudRain } from "lucide-react";
 import { useTranslation } from "../i18n/useTranslation";
+import { useFarmer } from "../context/useFarmer";
 
 export default function Weather() {
-  const { data, state, reload } = useApi(() => getWeather());
   const { t } = useTranslation();
+  const { profile } = useFarmer();
+
+  const weather = useApi(() => {
+    if (!profile) {
+      return Promise.reject(
+        new Error("Farmer profile is not available")
+      );
+    }
+
+    return getWeather(
+      profile.location.latitude,
+      profile.location.longitude
+    );
+  });
+
+  const { state, data, reload } = weather;
 
   return (
     <AppLayout>

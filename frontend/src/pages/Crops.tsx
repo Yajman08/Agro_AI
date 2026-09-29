@@ -18,8 +18,27 @@ import { useTranslation } from "../i18n/useTranslation";
 export default function Crops() {
   const { t } = useTranslation();
   const { profile, error: profileError, reloadProfile } = useFarmer();
-  const crop = useApi(() => getCropRecommendation());
-  const soil = useApi(() => getSoilData());
+  const crop = useApi(() => {
+  if (!profile) {
+    return Promise.reject(new Error("Farmer profile is not available"));
+  }
+
+  return getCropRecommendation({
+    latitude: profile.location.latitude,
+    longitude: profile.location.longitude,
+    month: new Date().getMonth() + 1,
+  });
+});
+  const soil = useApi(() => {
+  if (!profile) {
+    return Promise.reject(new Error("Farmer profile is not available"));
+  }
+
+  return getSoilData(
+    profile.location.latitude,
+    profile.location.longitude
+  );
+});
   const weather = useApi(() => getWeather());
 
   const location = profile
