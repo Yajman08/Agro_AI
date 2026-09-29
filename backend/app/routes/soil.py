@@ -1,15 +1,16 @@
 from datetime import datetime, timezone
 from pathlib import Path
-
 import pandas as pd
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
+from app.services.providers import SoilProviderResolver
 
 router = APIRouter(
     prefix="/api",
     tags=["Soil"]
 )
+
 
 
 # ---------------------------------------------------------
@@ -182,45 +183,43 @@ def get_soil(
     # -----------------------------------------------------
 
     if lat is not None and lon is not None:
-
         if not -90 <= lat <= 90:
-            raise HTTPException(
-                status_code=400,
-                detail="Invalid latitude."
-            )
-
+            raise HTTPException(status_code=400, detail="Invalid latitude.")
         if not -180 <= lon <= 180:
-            raise HTTPException(
-                status_code=400,
-                detail="Invalid longitude."
-            )
+            raise HTTPException(status_code=400, detail="Invalid longitude.")
 
-        df["distance"] = (
-            (df["latitude"] - lat) ** 2
-            + (df["longitude"] - lon) ** 2
-        )
-
-        row = df.loc[
-            df["distance"].idxmin()
-        ]
-
+        res = SoilProviderResolver.get_soil(lat, lon)
+        if res.data_available and res.ph is not None and res.organic_carbon is not None:
+            ph = res.ph
+            nitrogen = res.nitrogen if res.nitrogen is not None else 1.5
+            organic_carbon = res.organic_carbon
+            sand = res.texture["sand"] if res.texture else 40.0
+            silt = res.texture["silt"] if res.texture else 35.0
+            clay = res.texture["clay"] if res.texture else 25.0
+            data_source = f"AgriNexus AI: {res.source} ({res.scope})"
+        else:
+            # Fallback to nearest local record if global provider returned no data
+            df["distance"] = (df["latitude"] - lat) ** 2 + (df["longitude"] - lon) ** 2
+            row = df.loc[df["distance"].idxmin()]
+            ph = float(row["soil_ph"])
+            nitrogen = float(row["nitrogen"])
+            organic_carbon = float(row["organic_carbon"])
+            sand = float(row["sand"])
+            silt = float(row["silt"])
+            clay = float(row["clay"])
+            data_source = "AgriNexus AI: India Soil Dataset"
     else:
-        # Fallback to first valid observation
         row = df.iloc[0]
+        ph = float(row["soil_ph"])
+        nitrogen = float(row["nitrogen"])
+        organic_carbon = float(row["organic_carbon"])
+        sand = float(row["sand"])
+        silt = float(row["silt"])
+        clay = float(row["clay"])
+        data_source = "AgriNexus AI: India Soil Dataset"
 
     # -----------------------------------------------------
-    # Extract values
-    # -----------------------------------------------------
 
-    ph = float(row["soil_ph"])
-    nitrogen = float(row["nitrogen"])
-    organic_carbon = float(row["organic_carbon"])
-
-    sand = float(row["sand"])
-    silt = float(row["silt"])
-    clay = float(row["clay"])
-
-    # -----------------------------------------------------
     # Soil health score
     # -----------------------------------------------------
 
@@ -348,12 +347,9 @@ def get_soil(
             clay=round(clay, 2),
         ),
 
-        dataSource=(
-            "AgriNexus AI: "
-            "India Soil Dataset"
-        ),
+        dataSource=data_source,
 
         lastUpdated=datetime.now(
             timezone.utc
         ).isoformat(),
-    )
+    )

@@ -119,10 +119,58 @@ export interface AdvisoryAction {
   timing: string;
 }
 
+export interface KnowledgeReference {
+  title: string;
+  topic: string;
+  source: string;
+}
+
+
 export interface AdvisoryData {
   summary: string;
   actions: AdvisoryAction[];
   generatedAt: string;
+  location_name?: string;
+  crop?: string;
+  sources?: KnowledgeReference[];
+}
+
+export interface AdvisoryContextPayload {
+  question?: string;
+  farmer_name?: string;
+  crop?: string;
+  location?: {
+    name?: string;
+    latitude?: number;
+    longitude?: number;
+    district?: string;
+    state?: string;
+    country?: string;
+  };
+  weather?: {
+    temperature?: number;
+    condition?: string;
+    humidity?: number;
+    rain_probability?: number;
+    precipitation?: number;
+  };
+  soil?: {
+    ph?: number;
+    health_score?: number;
+    health_label?: string;
+    organic_carbon?: number;
+    nitrogen?: number;
+    source?: string;
+    scope?: string;
+  };
+  vegetation?: {
+    ndvi?: number;
+    observation_date?: string;
+    interpretation?: string;
+    source?: string;
+    scope?: string;
+  };
+  disease_result?: DiseaseResult | null;
 }
 
 export interface QuickQuestion {
@@ -183,25 +231,35 @@ export interface EnvironmentRainfall {
 
 export interface EnvironmentSoil {
   available: boolean;
+  data_available?: boolean;
   health_score?: number;
   health_label?: string;
   ph?: number;
   texture?: { sand: number; silt: number; clay: number };
   organic_carbon?: number;
   nitrogen?: number;
+  source?: string;
+  scope?: string;
+  coverage?: string;
   message?: string;
 }
 
 export interface EnvironmentVegetation {
   available: boolean;
+  data_available?: boolean;
   ndvi?: number;
   observation_date?: string;
   interpretation?: string;
+  source?: string;
+  scope?: string;
+  coverage?: string;
   message?: string;
 }
 
 export interface SourceMetadata {
   source: string;
+  scope?: string;
+  coverage?: string;
   source_type: string;
   schema_version: string;
 }
@@ -232,4 +290,5 @@ export interface GeocodeResult {
   state?: string;
   country?: string;
 }
+
 

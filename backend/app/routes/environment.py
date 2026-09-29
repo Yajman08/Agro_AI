@@ -5,51 +5,14 @@ from typing import Any, Optional
 import pandas as pd
 import requests
 from fastapi import APIRouter, HTTPException, Query
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
+from app.services.providers import SoilProviderResolver, VegetationProviderResolver
+
 
 router = APIRouter(
     prefix="/api",
     tags=["Environment & Interoperability"]
 )
-
-BASE_DIR = Path(__file__).resolve().parents[3]
-
-SOIL_FILE = (
-    BASE_DIR
-    / "data"
-    / "Processed"
-    / "Soil"
-    / "soil_dataset_india_clean.csv"
-)
-
-NDVI_FILE = (
-    BASE_DIR
-    / "data"
-    / "Processed"
-    / "satellite"
-    / "brics_modis_ndvi_india_clean.csv"
-)
-
-# Load datasets on startup
-try:
-    soil_df = pd.read_csv(SOIL_FILE)
-    for col in ["latitude", "longitude", "soil_ph", "nitrogen", "organic_carbon", "sand", "silt", "clay"]:
-        if col in soil_df.columns:
-            soil_df[col] = pd.to_numeric(soil_df[col], errors="coerce")
-    soil_df = soil_df.dropna(subset=["latitude", "longitude", "soil_ph", "nitrogen"])
-except Exception as error:
-    soil_df = pd.DataFrame()
-    print(f"Failed to load soil dataset in environment route: {error}")
-
-try:
-    ndvi_df = pd.read_csv(NDVI_FILE)
-    for col in ["latitude", "longitude", "ndvi"]:
-        if col in ndvi_df.columns:
-            ndvi_df[col] = pd.to_numeric(ndvi_df[col], errors="coerce")
-    ndvi_df = ndvi_df.dropna(subset=["latitude", "longitude", "ndvi"])
-except Exception as error:
-    ndvi_df = pd.DataFrame()
-    print(f"Failed to load NDVI dataset in environment route: {error}")
 
 
 # ---------------------------------------------------------
@@ -98,27 +61,38 @@ class SoilTextureSchema(BaseModel):
 
 class SoilSchema(BaseModel):
     available: bool = True
+    data_available: bool = True
     health_score: Optional[float] = None
     health_label: Optional[str] = None
     ph: Optional[float] = None
     texture: Optional[SoilTextureSchema] = None
     organic_carbon: Optional[float] = None
     nitrogen: Optional[float] = None
+    source: str = "India Soil Dataset"
+    scope: str = "India"
+    coverage: str = "local"
     message: Optional[str] = None
 
 
 class VegetationSchema(BaseModel):
     available: bool = True
+    data_available: bool = True
     ndvi: Optional[float] = None
     observation_date: Optional[str] = None
     interpretation: Optional[str] = None
+    source: str = "MODIS MOD13Q1"
+    scope: str = "Global"
+    coverage: str = "global"
     message: Optional[str] = None
 
 
 class SourceMetadata(BaseModel):
     source: str
+    scope: str = "Global"
+    coverage: str = "global"
     source_type: str
     schema_version: str = "1.0"
+
 
 
 class SourcesSchema(BaseModel):
@@ -382,89 +356,46 @@ def get_environment(
             unit="mm"
         )
 
-    # 3. Soil Data (India Soil Dataset)
-    if not soil_df.empty:
-        soil_work = soil_df.copy()
-        soil_work["dist"] = (soil_work["latitude"] - lat)**2 + (soil_work["longitude"] - lon)**2
-        nearest_row = soil_work.loc[soil_work["dist"].idxmin()]
-        min_dist_deg = soil_work["dist"].min() ** 0.5
+    # 3. Soil Data (SoilProviderResolver)
+    soil_res = SoilProviderResolver.get_soil(lat, lon)
+    soil_obj = SoilSchema(
+        available=soil_res.available,
+        data_available=soil_res.data_available,
+        health_score=soil_res.health_score,
+        health_label=soil_res.health_label,
+        ph=soil_res.ph,
+        texture=SoilTextureSchema(
+            sand=soil_res.texture["sand"],
+            silt=soil_res.texture["silt"],
+            clay=soil_res.texture["clay"]
+        ) if soil_res.texture else None,
+        organic_carbon=soil_res.organic_carbon,
+        nitrogen=soil_res.nitrogen,
+        source=soil_res.source,
+        scope=soil_res.scope,
+        coverage=soil_res.coverage,
+        message=soil_res.message
+    )
 
-        if min_dist_deg <= 10.0:  # Within ~1000km range
-            ph = float(nearest_row["soil_ph"])
-            nitrogen = float(nearest_row["nitrogen"])
-            carbon = float(nearest_row["organic_carbon"])
-            sand = float(nearest_row.get("sand", 40.0))
-            silt = float(nearest_row.get("silt", 35.0))
-            clay = float(nearest_row.get("clay", 25.0))
-
-            # Soil score calculation
-            ph_s = 1.0 if 6.0 <= ph <= 7.5 else (0.7 if 5.5 <= ph <= 8.0 else 0.4)
-            n_s = 1.0 if nitrogen >= 2.0 else (0.7 if nitrogen >= 1.0 else 0.4)
-            c_s = 1.0 if carbon >= 1.0 else (0.7 if carbon >= 0.5 else 0.4)
-            score = round((ph_s * 0.4 + n_s * 0.3 + c_s * 0.3) * 100, 1)
-
-            lbl = "Excellent" if score >= 80 else ("Good" if score >= 65 else ("Moderate" if score >= 50 else "Needs attention"))
-
-            soil_obj = SoilSchema(
-                available=True,
-                health_score=score,
-                health_label=lbl,
-                ph=round(ph, 2),
-                texture=SoilTextureSchema(sand=round(sand, 1), silt=round(silt, 1), clay=round(clay, 1)),
-                organic_carbon=round(carbon, 2),
-                nitrogen=round(nitrogen, 2),
-                message=None
-            )
-        else:
-            soil_obj = SoilSchema(available=False, message="No nearby soil observation available.")
-    else:
-        soil_obj = SoilSchema(available=False, message="Soil dataset currently unavailable.")
-
-    # 4. Satellite / MODIS NDVI Data
-    if not ndvi_df.empty:
-        ndvi_work = ndvi_df.copy()
-        ndvi_work["dist"] = (ndvi_work["latitude"] - lat)**2 + (ndvi_work["longitude"] - lon)**2
-        min_dist = ndvi_work["dist"].min() ** 0.5
-
-        if min_dist <= 5.0:  # Within ~500km
-            nearest_ndvi_row = ndvi_work.loc[ndvi_work["dist"].idxmin()]
-            val = float(nearest_ndvi_row["ndvi"])
-            obs_date = str(nearest_ndvi_row.get("date") or nearest_ndvi_row.get("modis_date") or "2026-01-01")
-
-            if val >= 0.6:
-                interp = "Dense / Healthy Green Vegetation"
-            elif val >= 0.4:
-                interp = "Moderate Green Vegetation"
-            elif val >= 0.2:
-                interp = "Sparse Vegetation / Early Stage Crop"
-            elif val >= 0:
-                interp = "Bare Soil / Minimal Vegetation"
-            else:
-                interp = "Water Body or Non-Vegetated Surface"
-
-            vegetation_obj = VegetationSchema(
-                available=True,
-                ndvi=round(val, 4),
-                observation_date=obs_date,
-                interpretation=interp,
-                message=None
-            )
-        else:
-            vegetation_obj = VegetationSchema(
-                available=False,
-                message="No nearby NDVI observation available."
-            )
-    else:
-        vegetation_obj = VegetationSchema(
-            available=False,
-            message="MODIS NDVI satellite dataset unavailable."
-        )
+    # 4. Satellite / MODIS NDVI Data (VegetationProviderResolver)
+    veg_res = VegetationProviderResolver.get_ndvi(lat, lon)
+    vegetation_obj = VegetationSchema(
+        available=veg_res.available,
+        data_available=veg_res.data_available,
+        ndvi=veg_res.ndvi,
+        observation_date=veg_res.observation_date,
+        interpretation=veg_res.interpretation,
+        source=veg_res.source,
+        scope=veg_res.scope,
+        coverage=veg_res.coverage,
+        message=veg_res.message
+    )
 
     # 5. Sources metadata & response
     sources_obj = SourcesSchema(
-        weather=SourceMetadata(source="Open-Meteo", source_type="weather", schema_version="1.0"),
-        soil=SourceMetadata(source="India Soil Dataset", source_type="soil", schema_version="1.0"),
-        satellite=SourceMetadata(source="MODIS NDVI", source_type="satellite", schema_version="1.0")
+        weather=SourceMetadata(source="Open-Meteo", scope="Global", coverage="global", source_type="weather", schema_version="1.0"),
+        soil=SourceMetadata(source=soil_res.source, scope=soil_res.scope, coverage=soil_res.coverage, source_type="soil", schema_version="1.0"),
+        satellite=SourceMetadata(source=veg_res.source, scope=veg_res.scope, coverage=veg_res.coverage, source_type="satellite", schema_version="1.0")
     )
 
     return EnvironmentResponse(
@@ -477,3 +408,4 @@ def get_environment(
         timestamp=datetime.now(timezone.utc).isoformat(),
         schema_version="1.0"
     )
+

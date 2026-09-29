@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, RefreshCw, AlertTriangle, ShieldCheck } from "lucide-react";
+import { MapPin, RefreshCw, AlertTriangle, ShieldCheck, CheckCircle2, Layers } from "lucide-react";
 import Card, { CardHeader } from "../common/Card";
 import Loading from "../common/Loading";
 import ErrorState from "../common/ErrorState";
@@ -37,6 +37,14 @@ export default function EnvironmentalIntelligence() {
 
   const data: EnvironmentData | null = env.data;
   if (!data) return null;
+
+  const soilSourceTag = data.soil.source
+    ? `${data.soil.source} · ${data.soil.scope || "Global"}`
+    : data.sources?.soil?.source || "India Soil Dataset";
+
+  const vegSourceTag = data.vegetation.source
+    ? `${data.vegetation.source} · ${data.vegetation.scope || "Global"}`
+    : data.sources?.satellite?.source || "MODIS MOD13Q1";
 
   return (
     <section className="space-y-4" aria-labelledby="env-intel-heading">
@@ -83,7 +91,57 @@ export default function EnvironmentalIntelligence() {
         />
       )}
 
-      {/* Grid of 5 Environmental Cards */}
+      {/* Interoperability Demonstration Section */}
+      <div className="rounded-xl border border-forest-200/80 bg-gradient-to-r from-forest-50/50 via-surface to-surface p-4 shadow-sm">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+          <div className="flex items-center gap-2">
+            <Layers className="h-4.5 w-4.5 text-forest-700" />
+            <h3 className="text-xs font-bold uppercase tracking-wider text-forest-900">
+              Data Sources & Interoperability Normalization
+            </h3>
+          </div>
+          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 text-[11px] font-medium text-forest-800 bg-forest-100/70 border border-forest-200 rounded-full shrink-0">
+            <ShieldCheck className="h-3.5 w-3.5 text-forest-700" />
+            Interoperability-ready agricultural intelligence layer
+          </span>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs">
+          <div className="rounded-lg bg-surface p-2.5 border border-line">
+            <span className="text-[10px] text-ink-soft uppercase font-semibold block">Weather</span>
+            <span className="font-medium text-ink flex items-center gap-1 mt-0.5">
+              <CheckCircle2 className="h-3.5 w-3.5 text-sky-600 shrink-0" />
+              Open-Meteo · Global
+            </span>
+          </div>
+
+          <div className="rounded-lg bg-surface p-2.5 border border-line">
+            <span className="text-[10px] text-ink-soft uppercase font-semibold block">Soil</span>
+            <span className="font-medium text-ink flex items-center gap-1 mt-0.5 truncate">
+              <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600 shrink-0" />
+              {soilSourceTag}
+            </span>
+          </div>
+
+          <div className="rounded-lg bg-surface p-2.5 border border-line">
+            <span className="text-[10px] text-ink-soft uppercase font-semibold block">Vegetation</span>
+            <span className="font-medium text-ink flex items-center gap-1 mt-0.5 truncate">
+              <CheckCircle2 className="h-3.5 w-3.5 text-purple-600 shrink-0" />
+              {vegSourceTag}
+            </span>
+          </div>
+
+          <div className="rounded-lg bg-surface p-2.5 border border-line">
+            <span className="text-[10px] text-ink-soft uppercase font-semibold block">Agricultural Knowledge</span>
+            <span className="font-medium text-ink flex items-center gap-1 mt-0.5">
+              <CheckCircle2 className="h-3.5 w-3.5 text-forest-600 shrink-0" />
+              FAO Knowledge Base
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* Grid of Environmental Cards */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         
         {/* 1. WEATHER CARD */}
@@ -93,7 +151,7 @@ export default function EnvironmentalIntelligence() {
             subtitle="Current conditions & forecast"
             action={
               <span className="text-[10px] font-medium text-sky-800 bg-sky-100/80 px-2 py-0.5 rounded border border-sky-200">
-                Weather · {data.sources?.weather?.source || "Open-Meteo"}
+                Weather · Open-Meteo · Global
               </span>
             }
           />
@@ -147,7 +205,7 @@ export default function EnvironmentalIntelligence() {
             subtitle="Precipitation & probability"
             action={
               <span className="text-[10px] font-medium text-blue-800 bg-blue-100/80 px-2 py-0.5 rounded border border-blue-200">
-                Weather · {data.sources?.weather?.source || "Open-Meteo"}
+                Precipitation · Open-Meteo
               </span>
             }
           />
@@ -193,15 +251,15 @@ export default function EnvironmentalIntelligence() {
         <Card className="relative overflow-hidden border-emerald-200/60 bg-gradient-to-br from-emerald-50/40 via-surface to-surface">
           <CardHeader
             title="🌱 Soil Health"
-            subtitle="Nearest observation"
+            subtitle={data.soil.available ? "Soil observation available" : "No observation"}
             action={
-              <span className="text-[10px] font-medium text-emerald-800 bg-emerald-100/80 px-2 py-0.5 rounded border border-emerald-200">
-                Soil · {data.sources?.soil?.source || "India Soil Dataset"}
+              <span className="text-[10px] font-medium text-emerald-800 bg-emerald-100/80 px-2 py-0.5 rounded border border-emerald-200 truncate max-w-[140px]">
+                {soilSourceTag}
               </span>
             }
           />
           <div className="mt-3 space-y-3">
-            {data.soil.available ? (
+            {data.soil.available && data.soil.data_available !== false ? (
               <>
                 <div className="flex items-baseline justify-between">
                   <div>
@@ -236,10 +294,13 @@ export default function EnvironmentalIntelligence() {
                 )}
               </>
             ) : (
-              <div className="py-4 text-center">
-                <AlertTriangle className="h-6 w-6 text-amber-500 mx-auto mb-1" />
-                <p className="text-xs text-ink-soft font-medium">
-                  {data.soil.message || "No nearby soil observation available."}
+              <div className="py-6 text-center">
+                <AlertTriangle className="h-6 w-6 text-amber-500 mx-auto mb-1.5" />
+                <p className="text-xs text-ink font-medium">
+                  {data.soil.message || "No soil observation available for this location."}
+                </p>
+                <p className="text-[11px] text-ink-soft mt-1">
+                  Source: {soilSourceTag}
                 </p>
               </div>
             )}
@@ -250,15 +311,15 @@ export default function EnvironmentalIntelligence() {
         <Card className="relative overflow-hidden border-purple-200/60 bg-gradient-to-br from-purple-50/40 via-surface to-surface">
           <CardHeader
             title="🛰 Vegetation"
-            subtitle="MODIS NDVI satellite data"
+            subtitle="Satellite NDVI observation"
             action={
-              <span className="text-[10px] font-medium text-purple-800 bg-purple-100/80 px-2 py-0.5 rounded border border-purple-200">
-                Vegetation · {data.sources?.satellite?.source || "MODIS NDVI"}
+              <span className="text-[10px] font-medium text-purple-800 bg-purple-100/80 px-2 py-0.5 rounded border border-purple-200 truncate max-w-[140px]">
+                {vegSourceTag}
               </span>
             }
           />
           <div className="mt-3 space-y-3">
-            {data.vegetation.available ? (
+            {data.vegetation.available && data.vegetation.data_available !== false ? (
               <>
                 <div className="flex items-baseline justify-between">
                   <div>
@@ -281,14 +342,17 @@ export default function EnvironmentalIntelligence() {
                 </div>
 
                 <div className="pt-2 border-t border-line text-[11px] text-ink-soft">
-                  Observation acquired via BRICS MODIS Satellite Constellation.
+                  Source: {vegSourceTag}
                 </div>
               </>
             ) : (
               <div className="py-6 text-center">
-                <AlertTriangle className="h-6 w-6 text-amber-500 mx-auto mb-1" />
-                <p className="text-xs text-ink-soft font-medium">
-                  {data.vegetation.message || "No nearby NDVI observation available."}
+                <AlertTriangle className="h-6 w-6 text-amber-500 mx-auto mb-1.5" />
+                <p className="text-xs text-ink font-medium">
+                  {data.vegetation.message || "No vegetation observation available for this location."}
+                </p>
+                <p className="text-[11px] text-ink-soft mt-1">
+                  Source: {vegSourceTag}
                 </p>
               </div>
             )}

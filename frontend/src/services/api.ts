@@ -5,6 +5,7 @@ import type {
   CropRecommendation,
   DiseaseResult,
   AdvisoryData,
+  AdvisoryContextPayload,
   RegenerativePractice,
   EnvironmentData,
   GeocodeResult,
@@ -236,12 +237,15 @@ export async function detectDisease(imageFile: File): Promise<DiseaseResult> {
   return (await res.json()) as DiseaseResult;
 }
 
-export async function getAdvisory(question?: string): Promise<AdvisoryData> {
+export async function getAdvisory(
+  payload?: AdvisoryContextPayload | string
+): Promise<AdvisoryData> {
+  const body = typeof payload === "string" ? { question: payload } : (payload ?? {});
   try {
     const res = await fetch(`${API_BASE_URL}/api/advisory`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ question }),
+      body: JSON.stringify(body),
     });
 
     if (res.ok) {
@@ -253,6 +257,7 @@ export async function getAdvisory(question?: string): Promise<AdvisoryData> {
 
   return delay(mockAdvisory, 500);
 }
+
 
 export interface RegenerativeData {
   metrics: { label: string; value: number; trend: "up" | "down" | "flat" }[];
