@@ -76,3 +76,57 @@ export async function loginDemoFarmer(farmerId = "farmer_1042"): Promise<MockAut
   if (!session) throw new Error("This demo farmer is unavailable.");
   return session;
 }
+
+export async function registerNewFarmer(params: {
+  name: string;
+  email: string;
+  village: string;
+  district: string;
+  state: string;
+  sizeAcres?: number;
+  currentCrop?: string;
+}): Promise<MockAuthSession> {
+  const newId = `farmer_${Date.now()}`;
+  const profile: FarmerProfile = {
+    id: newId,
+    name: params.name.trim() || "Judge / Guest",
+    phone: params.email.includes("@") ? undefined : params.email.trim(),
+    location: {
+      village: params.village.trim() || "Mandya",
+      district: params.district.trim() || "Mandya",
+      state: params.state.trim() || "Karnataka",
+      country: "India",
+      latitude: 12.5218,
+      longitude: 76.8951,
+    },
+    farm: {
+      sizeAcres: params.sizeAcres && params.sizeAcres > 0 ? Number(params.sizeAcres) : 2.5,
+      irrigationType: "Canal",
+    },
+    currentCrop: params.currentCrop?.trim() || "Rice",
+    preferredLanguage: "English",
+    onboardedAt: new Date().toISOString(),
+    soil: { ph: 6.5 },
+  };
+
+  const session: MockAuthSession = {
+    farmerId: newId,
+    email: params.email.trim().toLowerCase() || "farmer@agrinexus.ai",
+    farmerProfile: profile,
+  };
+
+  saveMockSession(session);
+  return session;
+}
+
+export async function loginGuestFarmer(): Promise<MockAuthSession> {
+  return registerNewFarmer({
+    name: "Guest Judge",
+    email: "judge@agrinexus.ai",
+    village: "Mandya",
+    district: "Mandya",
+    state: "Karnataka",
+    sizeAcres: 2.5,
+    currentCrop: "Rice",
+  });
+}

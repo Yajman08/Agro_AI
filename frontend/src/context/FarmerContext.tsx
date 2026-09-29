@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { ReactNode } from "react";
 import type { FarmerProfile } from "../types";
 import { getFarmerProfile, updateFarmerProfile } from "../services/api";
+import { mockFarmerProfile } from "../data/mockData";
 import { FarmerContext } from "./contextStore";
 import { useAuth } from "../auth/useAuth";
 
@@ -13,17 +14,18 @@ export function FarmerProvider({ children }: { children: ReactNode }) {
   const [reloadKey, setReloadKey] = useState(0);
   const [saving, setSaving] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
-  const farmerId = session?.farmerId;
-  const sessionProfile = session?.farmerProfile;
+  const farmerId = session?.farmerId ?? "farmer_1042";
+  const sessionProfile = session?.farmerProfile ?? mockFarmerProfile;
 
   useEffect(() => {
     let cancelled = false;
 
-    if (!farmerId || !sessionProfile) return;
-
     getFarmerProfile(farmerId, sessionProfile)
       .then((loadedProfile) => {
-        if (!cancelled) setProfile(loadedProfile);
+        if (!cancelled) {
+          setProfile(loadedProfile);
+          setError(null);
+        }
       })
       .catch((err) => {
         if (!cancelled) {
@@ -50,8 +52,8 @@ export function FarmerProvider({ children }: { children: ReactNode }) {
     setSaveError(null);
 
     try {
-      if (!farmerId || !profile) throw new Error("Sign in to save this farmer profile.");
-      const updatedProfile = await updateFarmerProfile(profileChanges, farmerId, profile);
+      const currentProfile = profile ?? sessionProfile;
+      const updatedProfile = await updateFarmerProfile(profileChanges, farmerId, currentProfile);
       setProfile(updatedProfile);
       updateSessionProfile(updatedProfile);
       return updatedProfile;
@@ -62,13 +64,15 @@ export function FarmerProvider({ children }: { children: ReactNode }) {
     } finally {
       setSaving(false);
     }
-  }, [farmerId, profile, updateSessionProfile]);
+  }, [farmerId, profile, sessionProfile, updateSessionProfile]);
+
+  const activeProfile = profile ?? sessionProfile;
 
   return (
     <FarmerContext.Provider
       value={{
-        profile: farmerId && profile?.id === farmerId ? profile : null,
-        loading: Boolean(farmerId) && (loading || profile?.id !== farmerId),
+        profile: activeProfile,
+        loading: loading && !activeProfile,
         error,
         reloadProfile,
         saving,

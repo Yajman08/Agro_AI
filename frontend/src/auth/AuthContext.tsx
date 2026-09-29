@@ -4,8 +4,10 @@ import type { FarmerProfile } from "../types";
 import {
   clearMockSession,
   loginDemoFarmer,
+  loginGuestFarmer,
   loginMockUser,
   readMockSession,
+  registerNewFarmer,
   saveMockSession,
 } from "./mockAuth";
 import type { MockAuthSession } from "./mockAuth";
@@ -26,6 +28,29 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setSession(nextSession);
   }, []);
 
+  const guestLogin = useCallback(async () => {
+    const nextSession = await loginGuestFarmer();
+    saveMockSession(nextSession);
+    setSession(nextSession);
+  }, []);
+
+  const registerFarmer = useCallback(
+    async (params: {
+      name: string;
+      email: string;
+      village: string;
+      district: string;
+      state: string;
+      sizeAcres?: number;
+      currentCrop?: string;
+    }) => {
+      const nextSession = await registerNewFarmer(params);
+      saveMockSession(nextSession);
+      setSession(nextSession);
+    },
+    []
+  );
+
   const logout = useCallback(() => {
     clearMockSession();
     setSession(null);
@@ -41,8 +66,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const value = useMemo(
-    () => ({ session, login, demoLogin, logout, updateSessionProfile }),
-    [session, login, demoLogin, logout, updateSessionProfile]
+    () => ({ session, login, demoLogin, guestLogin, registerFarmer, logout, updateSessionProfile }),
+    [session, login, demoLogin, guestLogin, registerFarmer, logout, updateSessionProfile]
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

@@ -146,3 +146,90 @@ export interface SustainabilityMetric {
 }
 
 export type RequestState = "idle" | "loading" | "success" | "error";
+
+export interface EnvironmentLocation {
+  name: string;
+  latitude: number;
+  longitude: number;
+  district?: string;
+  state?: string;
+  country?: string;
+}
+
+export interface EnvironmentForecastDay {
+  label: string;
+  date: string;
+  highC: number;
+  lowC: number;
+  condition: string;
+  rainProbabilityPct: number;
+}
+
+export interface EnvironmentWeather {
+  temperature: number;
+  feels_like?: number;
+  humidity: number;
+  wind_speed: number;
+  condition: string;
+  forecast: EnvironmentForecastDay[];
+}
+
+export interface EnvironmentRainfall {
+  precipitation: number;
+  rain_probability: number;
+  daily_precipitation: number;
+  unit: string;
+}
+
+export interface EnvironmentSoil {
+  available: boolean;
+  health_score?: number;
+  health_label?: string;
+  ph?: number;
+  texture?: { sand: number; silt: number; clay: number };
+  organic_carbon?: number;
+  nitrogen?: number;
+  message?: string;
+}
+
+export interface EnvironmentVegetation {
+  available: boolean;
+  ndvi?: number;
+  observation_date?: string;
+  interpretation?: string;
+  message?: string;
+}
+
+export interface SourceMetadata {
+  source: string;
+  source_type: string;
+  schema_version: string;
+}
+
+export interface EnvironmentSources {
+  weather: SourceMetadata;
+  soil: SourceMetadata;
+  satellite: SourceMetadata;
+}
+
+export interface EnvironmentData {
+  location: EnvironmentLocation;
+  weather: EnvironmentWeather;
+  rainfall: EnvironmentRainfall;
+  soil: EnvironmentSoil;
+  vegetation: EnvironmentVegetation;
+  sources: EnvironmentSources;
+  timestamp: string;
+  schema_version: string;
+}
+
+export interface GeocodeResult {
+  name: string;
+  display_name: string;
+  latitude: number;
+  longitude: number;
+  district?: string;
+  state?: string;
+  country?: string;
+}
+

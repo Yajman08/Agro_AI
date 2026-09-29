@@ -8,6 +8,7 @@ from app.routes.crops import router as crops_router
 from app.routes.disease import router as disease_router
 from app.routes.advisory import router as advisory_router
 from app.routes.regenerative import router as regenerative_router
+from app.routes.environment import router as environment_router
 
 # --------------------------------------------------
 # FastAPI Application
@@ -46,6 +47,7 @@ app.include_router(crops_router)
 app.include_router(disease_router)
 app.include_router(advisory_router)
 app.include_router(regenerative_router)
+app.include_router(environment_router)
 # --------------------------------------------------
 # Health Check
 # --------------------------------------------------

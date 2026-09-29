@@ -5,6 +5,7 @@ import AppLayout from "../components/layout/AppLayout";
 import Header from "../components/layout/Header";
 import FarmActionQueue from "../components/dashboard/FarmActionQueue";
 import FarmSituationBoard from "../components/dashboard/FarmSituationBoard";
+import EnvironmentalIntelligence from "../components/dashboard/EnvironmentalIntelligence";
 import WeatherSummary from "../components/dashboard/WeatherSummary";
 import SoilSummary from "../components/dashboard/SoilSummary";
 import CropRecommendationCard from "../components/dashboard/CropRecommendationCard";
@@ -58,6 +59,8 @@ export default function Dashboard() {
           season={season}
           updatedAt={updatedAt}
         />
+
+        <EnvironmentalIntelligence />
 
         <FarmSituationBoard
           cropName={cropName}

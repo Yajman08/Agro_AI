@@ -5,6 +5,9 @@ import type {
   CropRecommendation,
   DiseaseResult,
   AdvisoryData,
+  RegenerativePractice,
+  EnvironmentData,
+  GeocodeResult,
 } from "../types";
 import {
   mockFarmerProfile,
@@ -31,7 +34,7 @@ import {
 //   }
 // ----------------------------------------------------------------------------
 
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000";
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "https://promotion-modified-exhaust-advise.trycloudflare.com";
 
 export class ApiError extends Error {
   status?: number;
@@ -250,3 +253,75 @@ export async function getAdvisory(question?: string): Promise<AdvisoryData> {
 
   return delay(mockAdvisory, 500);
 }
+
+export interface RegenerativeData {
+  metrics: { label: string; value: number; trend: "up" | "down" | "flat" }[];
+  practices: RegenerativePractice[];
+}
+
+export async function getRegenerativeData(): Promise<RegenerativeData> {
+  try {
+    const res = await fetch(`${API_BASE_URL}/api/regenerative`);
+    if (res.ok) {
+      return (await res.json()) as RegenerativeData;
+    }
+  } catch {
+    // Ignore network error and fall back
+  }
+
+  return delay({
+    metrics: [
+      { label: "Soil Organic Matter Index", value: 78.5, trend: "up" },
+      { label: "Water Infiltration Efficiency", value: 84.0, trend: "up" },
+      { label: "Biodiversity & Habitat Cover", value: 72.0, trend: "flat" },
+      { label: "Synthetic Input Reduction", value: 65.0, trend: "up" },
+    ],
+    practices: [],
+  }, 400);
+}
+
+export async function getEnvironmentData(
+  latitude: number,
+  longitude: number,
+  locationName?: string
+): Promise<EnvironmentData> {
+  const params = new URLSearchParams({
+    lat: String(latitude),
+    lon: String(longitude),
+  });
+  if (locationName) {
+    params.set("name", locationName);
+  }
+
+  const res = await fetch(`${API_BASE_URL}/api/environment?${params.toString()}`);
+  if (!res.ok) {
+    const message = await res.text();
+    throw new ApiError(message || "Failed to load environmental intelligence", res.status);
+  }
+
+  return (await res.json()) as EnvironmentData;
+}
+
+export async function geocodeLocation(query: string): Promise<GeocodeResult[]> {
+  const params = new URLSearchParams({ q: query });
+  const res = await fetch(`${API_BASE_URL}/api/geocode?${params.toString()}`);
+  if (!res.ok) {
+    throw new ApiError("Failed to search location", res.status);
+  }
+  return (await res.json()) as GeocodeResult[];
+}
+
+export async function reverseGeocode(latitude: number, longitude: number): Promise<GeocodeResult> {
+  const params = new URLSearchParams({ lat: String(latitude), lon: String(longitude) });
+  const res = await fetch(`${API_BASE_URL}/api/reverse-geocode?${params.toString()}`);
+  if (!res.ok) {
+    return {
+      name: `${latitude.toFixed(2)}, ${longitude.toFixed(2)}`,
+      display_name: `${latitude.toFixed(4)}° N, ${longitude.toFixed(4)}° E`,
+      latitude,
+      longitude,
+    };
+  }
+  return (await res.json()) as GeocodeResult;
+}
+

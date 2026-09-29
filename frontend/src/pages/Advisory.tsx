@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
 import AppLayout from "../components/layout/AppLayout";
 import Header from "../components/layout/Header";
@@ -22,6 +22,27 @@ export default function Advisory() {
   const [data, setData] = useState<AdvisoryData | null>(null);
   const [state, setState] = useState<RequestState>("idle");
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    setState("loading");
+    getAdvisory()
+      .then((advisory) => {
+        if (!cancelled) {
+          setData(advisory);
+          setState("success");
+        }
+      })
+      .catch((err) => {
+        if (!cancelled) {
+          setError(err instanceof Error ? err.message : "We couldn't prepare your advisory.");
+          setState("error");
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const askAdvisor = async (nextQuestion: string) => {
     const trimmedQuestion = nextQuestion.trim();

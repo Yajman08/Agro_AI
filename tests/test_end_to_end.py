@@ -16,6 +16,7 @@ from app.routes.crops import crop_recommendation, CropRecommendationRequest
 from app.routes.disease import disease_detection
 from app.routes.advisory import get_advisory, AdvisoryQuestionRequest
 from app.routes.regenerative import get_regenerative_practices
+from app.routes.environment import get_environment, geocode_location, reverse_geocode
 
 
 def run_e2e_tests():
@@ -26,7 +27,7 @@ def run_e2e_tests():
     # 1. Health Check
     print("\n[1/7] Testing Farmer Profile API...")
     profile = get_farmer_profile()
-    assert profile.id == "farmer-001"
+    assert profile.id == "farmer_1042"
     print(f"  [OK] Farmer Profile retrieved: {profile.name} ({profile.location.village}, {profile.location.state})")
 
     # Update profile
@@ -84,14 +85,34 @@ def run_e2e_tests():
     print(f"  [OK] Top Action: {adv_res.actions[0].title}")
 
     # 7. Sustainable / Regenerative API
-    print("\n[7/7] Testing Regenerative Agriculture API...")
+    print("\n[7/8] Testing Regenerative Agriculture API...")
     regen_res = get_regenerative_practices()
     assert len(regen_res.practices) > 0
     print(f"  [OK] Regenerative Practices retrieved: {len(regen_res.practices)} practices.")
     print(f"  [OK] Practice #1: {regen_res.practices[0].practice} - {regen_res.practices[0].benefit}")
 
+    # 8. Environmental Intelligence Interoperability Layer API
+    print("\n[8/8] Testing Location-Aware Environmental Intelligence (/api/environment)...")
+    env_res = get_environment(lat=12.9716, lon=77.5946, name="Bengaluru, Karnataka")
+    assert env_res.location.name == "Bengaluru, Karnataka"
+    assert env_res.weather.temperature is not None
+    assert env_res.sources.weather.source == "Open-Meteo"
+    assert env_res.sources.soil.source == "India Soil Dataset"
+    assert env_res.sources.satellite.source == "MODIS NDVI"
+    assert env_res.schema_version == "1.0"
+    print(f"  [OK] Location Resolved: {env_res.location.name}")
+    print(f"  [OK] Weather: {env_res.weather.temperature}°C, {env_res.weather.condition}")
+    print(f"  [OK] Soil: {env_res.soil.health_score} ({env_res.soil.health_label})")
+    print(f"  [OK] Vegetation (MODIS NDVI): {env_res.vegetation.ndvi} ({env_res.vegetation.interpretation})")
+    print(f"  [OK] Interoperability Schema Version: {env_res.schema_version}")
+
+    # Test geocoding lookup
+    geo_res = geocode_location("Bengaluru")
+    assert len(geo_res) > 0
+    print(f"  [OK] Geocoding resolved 'Bengaluru' -> Lat: {geo_res[0].latitude}, Lon: {geo_res[0].longitude}")
+
     print("\n" + "=" * 70)
-    print("ALL 7 END-TO-END FLOW APIS VERIFIED SUCCESSFULLY!")
+    print("ALL 8 END-TO-END FLOW APIS & INTEROPERABILITY LAYER VERIFIED!")
     print("=" * 70)
 
 

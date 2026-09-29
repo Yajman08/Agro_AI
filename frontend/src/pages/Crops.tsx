@@ -19,27 +19,24 @@ export default function Crops() {
   const { t } = useTranslation();
   const { profile, error: profileError, reloadProfile } = useFarmer();
   const crop = useApi(() => {
-  if (!profile) {
-    return Promise.reject(new Error("Farmer profile is not available"));
-  }
-
-  return getCropRecommendation({
-    latitude: profile.location.latitude,
-    longitude: profile.location.longitude,
-    month: new Date().getMonth() + 1,
+    const lat = profile?.location.latitude ?? 12.5218;
+    const lon = profile?.location.longitude ?? 76.8951;
+    return getCropRecommendation({
+      latitude: lat,
+      longitude: lon,
+      month: new Date().getMonth() + 1,
+    });
   });
-});
   const soil = useApi(() => {
-  if (!profile) {
-    return Promise.reject(new Error("Farmer profile is not available"));
-  }
-
-  return getSoilData(
-    profile.location.latitude,
-    profile.location.longitude
-  );
-});
-  const weather = useApi(() => getWeather());
+    const lat = profile?.location.latitude ?? 12.5218;
+    const lon = profile?.location.longitude ?? 76.8951;
+    return getSoilData(lat, lon);
+  });
+  const weather = useApi(() => {
+    const lat = profile?.location.latitude ?? 12.5218;
+    const lon = profile?.location.longitude ?? 76.8951;
+    return getWeather(lat, lon);
+  });
 
   const location = profile
     ? `${profile.location.village}, ${profile.location.district}, ${profile.location.state}`
